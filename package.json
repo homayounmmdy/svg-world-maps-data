@@ -1,0 +1,11 @@
+{
+  "name": "svg-world-maps-data",
+  "version": "1.0.0",
+  "description": "Map data files for svg-world-maps npm",
+  "license": "MIT",
+  "files": ["maps"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/homayounmmdy/svg-world-maps-data.git"
+  }
+}

@@ -1,0 +1,18 @@
+================================================================================
+EXCEPTION: Map Data Licensing
+================================================================================
+
+The SVG map data (including paths, viewBox coordinates, element IDs, and labels) 
+located in the map data directories (e.g., `maps/`) is sourced from 
+SimpleMaps (https://simplemaps.com).
+
+This specific map data is governed by the SimpleMaps SVG Map Library License 
+(https://simplemaps.com/resources/svg-license) and is NOT covered by the MIT 
+license above.
+
+Users of this software may use the included map data for personal or 
+commercial projects in accordance with the SimpleMaps license. 
+
+IMPORTANT: You may not redistribute the raw map data "as is" or as a 
+standalone product without prior written permission from SimpleMaps. 
+Attribution to SimpleMaps is appreciated as per their terms.
