@@ -613,7 +613,7 @@ const JAPAN = {
         }
     ],
     capitals: [
-        { name: "Tokyo", code: "JP", x: "526.9",
+        { name: "Tokyo", x: "526.9",
             y: "419.8", },
     ]
 }
