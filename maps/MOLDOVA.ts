@@ -90,6 +90,9 @@
 const MOLDOVA = {
     name: "Moldova",
     code: "MD",
+    capitals: [
+        { name: "Chisinau", x: "599.5", y: "497.1" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

@@ -90,6 +90,9 @@
 const RWANDA = {
     name: "Rwanda",
     code: "RW",
+    capitals: [
+        { name: "Kigali", x: "611.9", y: "430" }
+    ],
     viewBox: "0 0 1000 873",
     states: [
         {

@@ -90,6 +90,9 @@
 const MONTENEGRO = {
     name: "Montenegro",
     code: "ME",
+    capitals: [
+        { name: "Podgorica", x: "478.5", y: "584.9" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

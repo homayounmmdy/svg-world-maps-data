@@ -90,6 +90,9 @@
 const NAURU = {
     name: "Nauru",
     code: "NR",
+    capitals: [
+        { name: "Yaren", x: "365.6", y: "831" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

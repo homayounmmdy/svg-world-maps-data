@@ -90,6 +90,9 @@
 const SENEGAL = {
     name: "Senegal",
     code: "SN",
+    capitals: [
+        { name: "Dakar", x: "88.4", y: "325.8" }
+    ],
     viewBox: "0 0 1000 736",
     states: [
         {

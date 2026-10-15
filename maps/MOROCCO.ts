@@ -90,6 +90,9 @@
 const MOROCCO = {
     name: "Morocco",
     code: "MA",
+    capitals: [
+        { name: "Rabat", x: "644.7", y: "171.3" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

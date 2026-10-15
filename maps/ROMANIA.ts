@@ -90,6 +90,9 @@
 const ROMANIA = {
     name: "Romania",
     code: "RO",
+    capitals: [
+        { name: "Bucharest", x: "608.8", y: "564.1" }
+    ],
     viewBox: "0 0 1000 704",
     states: [
         {

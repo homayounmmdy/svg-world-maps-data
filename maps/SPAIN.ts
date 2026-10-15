@@ -90,6 +90,9 @@
 const SPAIN = {
     name: "Spain",
     code: "ES",
+    capitals: [
+        { name: "Madrid", x: "627.2", y: "219.2" }
+    ],
     viewBox: "0 0 1000 890",
     states: [
         {

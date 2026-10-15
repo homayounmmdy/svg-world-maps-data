@@ -90,6 +90,9 @@
 const SLOVENIA = {
     name: "Slovenia",
     code: "SI",
+    capitals: [
+        { name: "Ljubljana", x: "374.1", y: "365.7" }
+    ],
     viewBox: "0 0 1000 660",
     states: [
         {

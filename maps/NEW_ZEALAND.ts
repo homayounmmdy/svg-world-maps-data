@@ -90,6 +90,9 @@
 const NEW_ZEALAND = {
     name: "New_zealand",
     code: "NZ",
+    capitals: [
+        { name: "Wellington", x: "708.3", y: "656.4" }
+    ],
     viewBox: "0 0 1000 1330",
     states: [
         {

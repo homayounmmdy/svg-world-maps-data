@@ -1,13 +1,13 @@
 # 🗺️ Maps Information Report
 
-**📅 Last Generated:** Thursday, October 15, 2026 at 07:22 PM GMT+3:30
+**📅 Last Generated:** Thursday, October 15, 2026 at 07:28 PM GMT+3:30
 
 ## 📊 Executive Summary
 
 - **Total Maps Available:** 211
 - **Total Regions/States Tracked:** 4,299
 - **Label Support Coverage:** 97.6% (206 out of 211 maps)
-- **Capital Coverage:** 31.3% (66 out of 211 maps)
+- **Capital Coverage:** 44.1% (93 out of 211 maps)
 
 ---
 
@@ -145,65 +145,65 @@ This report provides an automated, real-time overview of all available map confi
 | `mauritania` | Mauritania | JPP | 15 | ✅ Yes | ✅ Yes |
 | `mauritius` | Mauritius | JPP | 12 | ✅ Yes | ✅ Yes |
 | `mexico` | Mexico | JPP | 32 | ✅ Yes | ❌ No |
-| `moldova` | Moldova | JPP | 37 | ✅ Yes | ❌ No |
+| `moldova` | Moldova | JPP | 37 | ✅ Yes | ✅ Yes |
 | `monaco` | Monaco | JPP | 1 | ✅ Yes | ❌ No |
-| `mongolia` | Mongolia | JPP | 22 | ✅ Yes | ❌ No |
-| `montenegro` | Montenegro | JPP | 24 | ✅ Yes | ❌ No |
+| `mongolia` | Mongolia | JPP | 22 | ✅ Yes | ✅ Yes |
+| `montenegro` | Montenegro | JPP | 24 | ✅ Yes | ✅ Yes |
 | `montserrat` | Montserrat | JPP | 3 | ✅ Yes | ❌ No |
-| `morocco` | Morocco | JPP | 12 | ✅ Yes | ❌ No |
-| `mozambique` | Mozambique | JPP | 11 | ✅ Yes | ❌ No |
+| `morocco` | Morocco | JPP | 12 | ✅ Yes | ✅ Yes |
+| `mozambique` | Mozambique | JPP | 11 | ✅ Yes | ✅ Yes |
 | `myanmar` | Myanmar | JPP | 14 | ✅ Yes | ❌ No |
 | `namibia` | Namibia | JPP | 14 | ✅ Yes | ❌ No |
-| `nauru` | Nauru | JPP | 14 | ✅ Yes | ❌ No |
+| `nauru` | Nauru | JPP | 14 | ✅ Yes | ✅ Yes |
 | `nepal` | Nepal | JPP | 14 | ✅ Yes | ❌ No |
 | `netherlands` | Netherlands | JPP | 12 | ✅ Yes | ❌ No |
 | `new_caledonia` | New_caledonia | JPP | 3 | ✅ Yes | ❌ No |
-| `new_zealand` | New_zealand | JPP | 16 | ✅ Yes | ❌ No |
-| `nicaragua` | Nicaragua | JPP | 17 | ✅ Yes | ❌ No |
-| `niger` | Niger | JPP | 8 | ✅ Yes | ❌ No |
+| `new_zealand` | New_zealand | JPP | 16 | ✅ Yes | ✅ Yes |
+| `nicaragua` | Nicaragua | JPP | 17 | ✅ Yes | ✅ Yes |
+| `niger` | Niger | JPP | 8 | ✅ Yes | ✅ Yes |
 | `nigeria` | Nigeria | JPP | 37 | ✅ Yes | ❌ No |
-| `north_korea` | North_korea | JPP | 12 | ✅ Yes | ❌ No |
-| `norway` | Norway | JPP | 11 | ✅ Yes | ❌ No |
-| `oman` | Oman | JPP | 11 | ✅ Yes | ❌ No |
+| `north_korea` | North_korea | JPP | 12 | ✅ Yes | ✅ Yes |
+| `norway` | Norway | JPP | 11 | ✅ Yes | ✅ Yes |
+| `oman` | Oman | JPP | 11 | ✅ Yes | ✅ Yes |
 | `pakistan` | Pakistan | JPP | 7 | ✅ Yes | ❌ No |
 | `palestine` | Palestine | JPP | 2 | ✅ Yes | ❌ No |
 | `panama` | Panama | JPP | 14 | ✅ Yes | ❌ No |
 | `papua_new_guinea` | Papua_new_guinea | JPP | 22 | ✅ Yes | ❌ No |
-| `paraguay` | Paraguay | JPP | 18 | ✅ Yes | ❌ No |
-| `peru` | Peru | JPP | 26 | ✅ Yes | ❌ No |
+| `paraguay` | Paraguay | JPP | 18 | ✅ Yes | ✅ Yes |
+| `peru` | Peru | JPP | 26 | ✅ Yes | ✅ Yes |
 | `philippines` | Philippines | JPP | 17 | ✅ Yes | ❌ No |
 | `pitcairn_islands` | Pitcairn_islands | JPP | 1 | ✅ Yes | ❌ No |
 | `poland` | Poland | JPP | 16 | ✅ Yes | ❌ No |
 | `portugal` | Portugal | JPP | 20 | ✅ Yes | ❌ No |
 | `puerto_rico` | Puerto_rico | JPP | 1 | ✅ Yes | ❌ No |
 | `qatar` | Qatar | JPP | 8 | ✅ Yes | ❌ No |
-| `republic_of_congo` | Republic_of_congo | JPP | 12 | ✅ Yes | ❌ No |
-| `romania` | Romania | JPP | 42 | ✅ Yes | ❌ No |
+| `republic_of_congo` | Republic_of_congo | JPP | 12 | ✅ Yes | ✅ Yes |
+| `romania` | Romania | JPP | 42 | ✅ Yes | ✅ Yes |
 | `russia` | Russia | JPP | 83 | ❌ No | ❌ No |
-| `rwanda` | Rwanda | JPP | 5 | ✅ Yes | ❌ No |
-| `saint_kitts_and_nevis` | Saint_kitts_and_nevis | JPP | 14 | ✅ Yes | ❌ No |
-| `saint_lucia` | Saint_lucia | JPP | 11 | ✅ Yes | ❌ No |
+| `rwanda` | Rwanda | JPP | 5 | ✅ Yes | ✅ Yes |
+| `saint_kitts_and_nevis` | Saint_kitts_and_nevis | JPP | 14 | ✅ Yes | ✅ Yes |
+| `saint_lucia` | Saint_lucia | JPP | 11 | ✅ Yes | ✅ Yes |
 | `saint_martin_dutch` | saint_martin_dutch | JPP | 1 | ✅ Yes | ❌ No |
 | `saint_martin_french` | Saint_martin_french | JPP | 1 | ✅ Yes | ❌ No |
 | `saint_vincent_and_the_grenadines` | Saint_vincent_and_the_grenadines | JPP | 6 | ✅ Yes | ❌ No |
 | `sao_tome_and_principe` | São_tomé_and_principe | JPP | 7 | ✅ Yes | ❌ No |
-| `saudi_arabia` | Saudi_arabia | JPP | 13 | ✅ Yes | ❌ No |
-| `senegal` | Senegal | JPP | 14 | ✅ Yes | ❌ No |
+| `saudi_arabia` | Saudi_arabia | JPP | 13 | ✅ Yes | ✅ Yes |
+| `senegal` | Senegal | JPP | 14 | ✅ Yes | ✅ Yes |
 | `serbia` | Serbia | JPP | 25 | ✅ Yes | ❌ No |
 | `seychelles` | Seychelles | JPP | 27 | ✅ Yes | ❌ No |
 | `sierra_leone` | Sierra_leone | JPP | 5 | ✅ Yes | ❌ No |
-| `singapore` | Singapore | JPP | 5 | ✅ Yes | ❌ No |
+| `singapore` | Singapore | JPP | 5 | ✅ Yes | ✅ Yes |
 | `slovakia` | Slovakia | JPP | 8 | ✅ Yes | ❌ No |
-| `slovenia` | Slovenia | JPP | 212 | ✅ Yes | ❌ No |
-| `solomon_islands` | Solomon_islands | JPP | 10 | ✅ Yes | ❌ No |
+| `slovenia` | Slovenia | JPP | 212 | ✅ Yes | ✅ Yes |
+| `solomon_islands` | Solomon_islands | JPP | 10 | ✅ Yes | ✅ Yes |
 | `somalia` | Somalia | JPP | 20 | ✅ Yes | ❌ No |
 | `south_africa` | South_africa | JPP | 9 | ✅ Yes | ✅ Yes |
 | `south_korea` | South_korea | JPP | 17 | ✅ Yes | ✅ Yes |
 | `south_sudan` | South_sudan | JPP | 10 | ✅ Yes | ❌ No |
-| `spain` | Spain | JPP | 19 | ✅ Yes | ❌ No |
+| `spain` | Spain | JPP | 19 | ✅ Yes | ✅ Yes |
 | `sri_lanka` | Sri_lanka | JPP | 25 | ✅ Yes | ❌ No |
-| `sudan` | Sudan | JPP | 18 | ✅ Yes | ❌ No |
-| `suriname` | Suriname | JPP | 10 | ✅ Yes | ❌ No |
+| `sudan` | Sudan | JPP | 18 | ✅ Yes | ✅ Yes |
+| `suriname` | Suriname | JPP | 10 | ✅ Yes | ✅ Yes |
 | `swaziland` | Swaziland | JPP | 4 | ✅ Yes | ❌ No |
 | `sweden` | SWEDEN | JPP | 21 | ✅ Yes | ❌ No |
 | `switzerland` | Switzerland | JPP | 26 | ✅ Yes | ❌ No |
@@ -311,63 +311,36 @@ The following maps do not yet have a `capitals` property defined. This means the
 - `liberia` (Liberia)
 - `libya` (Libya)
 - `mexico` (Mexico)
-- `moldova` (Moldova)
 - `monaco` (Monaco)
-- `mongolia` (Mongolia)
-- `montenegro` (Montenegro)
 - `montserrat` (Montserrat)
-- `morocco` (Morocco)
-- `mozambique` (Mozambique)
 - `myanmar` (Myanmar)
 - `namibia` (Namibia)
-- `nauru` (Nauru)
 - `nepal` (Nepal)
 - `netherlands` (Netherlands)
 - `new_caledonia` (New_caledonia)
-- `new_zealand` (New_zealand)
-- `nicaragua` (Nicaragua)
-- `niger` (Niger)
 - `nigeria` (Nigeria)
-- `north_korea` (North_korea)
-- `norway` (Norway)
-- `oman` (Oman)
 - `pakistan` (Pakistan)
 - `palestine` (Palestine)
 - `panama` (Panama)
 - `papua_new_guinea` (Papua_new_guinea)
-- `paraguay` (Paraguay)
-- `peru` (Peru)
 - `philippines` (Philippines)
 - `pitcairn_islands` (Pitcairn_islands)
 - `poland` (Poland)
 - `portugal` (Portugal)
 - `puerto_rico` (Puerto_rico)
 - `qatar` (Qatar)
-- `republic_of_congo` (Republic_of_congo)
-- `romania` (Romania)
 - `russia` (Russia)
-- `rwanda` (Rwanda)
-- `saint_kitts_and_nevis` (Saint_kitts_and_nevis)
-- `saint_lucia` (Saint_lucia)
 - `saint_martin_dutch` (saint_martin_dutch)
 - `saint_martin_french` (Saint_martin_french)
 - `saint_vincent_and_the_grenadines` (Saint_vincent_and_the_grenadines)
 - `sao_tome_and_principe` (São_tomé_and_principe)
-- `saudi_arabia` (Saudi_arabia)
-- `senegal` (Senegal)
 - `serbia` (Serbia)
 - `seychelles` (Seychelles)
 - `sierra_leone` (Sierra_leone)
-- `singapore` (Singapore)
 - `slovakia` (Slovakia)
-- `slovenia` (Slovenia)
-- `solomon_islands` (Solomon_islands)
 - `somalia` (Somalia)
 - `south_sudan` (South_sudan)
-- `spain` (Spain)
 - `sri_lanka` (Sri_lanka)
-- `sudan` (Sudan)
-- `suriname` (Suriname)
 - `swaziland` (Swaziland)
 - `sweden` (SWEDEN)
 - `switzerland` (Switzerland)
@@ -400,4 +373,4 @@ The following maps do not yet have a `capitals` property defined. This means the
 - `zambia` (Zambia)
 - `zimbabwe` (Zimbabwe)
 
-**Total without capitals:** 145 out of 211
+**Total without capitals:** 118 out of 211

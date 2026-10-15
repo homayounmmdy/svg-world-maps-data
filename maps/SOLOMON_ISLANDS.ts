@@ -90,6 +90,9 @@
 const SOLOMON_ISLANDS = {
     name: "Solomon_islands",
     code: "SB",
+    capitals: [
+        { name: "Honiara", x: "352", y: "215.9" }
+    ],
     viewBox: "0 0 1000 433",
     states: [
         {

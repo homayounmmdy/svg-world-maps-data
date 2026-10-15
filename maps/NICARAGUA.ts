@@ -90,6 +90,9 @@
 const NICARAGUA = {
     name: "Nicaragua",
     code: "NI",
+    capitals: [
+        { name: "Managua", x: "305.6", y: "562.3" }
+    ],
     viewBox: "0 0 1000 893",
     states: [
         {

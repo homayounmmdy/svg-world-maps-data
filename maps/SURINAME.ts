@@ -90,6 +90,9 @@
 const SURINAME = {
     name: "Suriname",
     code: "SR",
+    capitals: [
+        { name: "Paramaribo", x: "685.7", y: "80.6" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

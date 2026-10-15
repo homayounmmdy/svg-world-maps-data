@@ -90,6 +90,9 @@
 const SINGAPORE = {
     name: "Singapore",
     code: "SG",
+    capitals: [
+        { name: "Singapore", x: "569", y: "351" }
+    ],
     viewBox: "0 0 1000 508",
     states: [
         {

@@ -90,6 +90,9 @@
 const NORTH_KOREA = {
     name: "North_korea",
     code: "KP",
+    capitals: [
+        { name: "Pyongyang", x: "291", y: "723.3" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

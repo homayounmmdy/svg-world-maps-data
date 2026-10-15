@@ -90,6 +90,9 @@
 const MOZAMBIQUE = {
     name: "Mozambique",
     code: "MZ",
+    capitals: [
+        { name: "Maputo", x: "338.6", y: "865.8" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

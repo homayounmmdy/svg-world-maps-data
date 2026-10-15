@@ -90,6 +90,9 @@
 const REPUBLIC_OF_CONGO = {
     name: "Republic_of_congo",
     code: "CG",
+    capitals: [
+        { name: "Brazzaville", x: "552.6", y: "836.7" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

@@ -90,6 +90,9 @@
 const SAINT_LUCIA = {
     name: "Saint_lucia",
     code: "LC",
+    capitals: [
+        { name: "Castries", x: "527.5", y: "315.3" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

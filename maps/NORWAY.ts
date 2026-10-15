@@ -90,6 +90,9 @@
 const NORWAY = {
     name: "Norway",
     code: "No",
+    capitals: [
+        { name: "Oslo", x: "280.1", y: "833.1" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

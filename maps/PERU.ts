@@ -90,6 +90,9 @@
 const PERU = {
     name: "Peru",
     code: "PE",
+    capitals: [
+        { name: "Lima", x: "408.5", y: "639.1" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

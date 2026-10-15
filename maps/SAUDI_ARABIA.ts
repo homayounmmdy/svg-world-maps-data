@@ -90,6 +90,9 @@
 const SAUDI_ARABIA = {
     name: "Saudi_arabia",
     code: "SA",
+    capitals: [
+        { name: "Riyadh", x: "410.2", y: "656.7" }
+    ],
     viewBox: "0 0 1000 824",
     states: [
         {

@@ -90,6 +90,9 @@
 const PARAGUAY = {
     name: "Paraguay",
     code: "PY",
+    capitals: [
+        { name: "Asunción", x: "585.2", y: "699.3" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

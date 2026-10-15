@@ -90,6 +90,9 @@
 const NIGER = {
     name: "Niger",
     code: "NE",
+    capitals: [
+        { name: "Niamey", x: "159.1", y: "643" }
+    ],
     viewBox: "0 0 1000 786",
     states: [
         {

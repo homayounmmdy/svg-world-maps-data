@@ -90,6 +90,9 @@
 const SAINT_KITTS_AND_NEVIS = {
     name: "Saint_kitts_and_nevis",
     code: "KN",
+    capitals: [
+        { name: "Basseterre", x: "641.3", y: "543.1" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

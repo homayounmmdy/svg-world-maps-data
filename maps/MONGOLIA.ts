@@ -90,6 +90,9 @@
 const MONGOLIA = {
     name: "Mongolia",
     code: "MN",
+    capitals: [
+        { name: "Ulaanbaatar", x: "588.7", y: "205.6" }
+    ],
     viewBox: "0 0 1000 481",
     states: [
         {

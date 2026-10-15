@@ -90,6 +90,9 @@
 const OMAN = {
     name: "Oman",
     code: "OM",
+    capitals: [
+        { name: "Muscat", x: "747.4", y: "356.4" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

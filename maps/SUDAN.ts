@@ -90,6 +90,9 @@
 const SUDAN = {
     name: "Sudan",
     code: "SD",
+    capitals: [
+        { name: "Khartoum", x: "654.4", y: "466.4" }
+    ],
     viewBox: "0 0 1000 900",
     states: [
         {
