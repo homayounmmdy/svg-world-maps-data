@@ -90,6 +90,9 @@
 const LITHUANIA = {
     name: "Lithuania",
     code: "LT",
+    capitals: [
+        { name: "Vilnius", x: "765.6", y: "491" }
+    ],
     viewBox: "0 0 1000 763",
     states: [
         {

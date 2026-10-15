@@ -90,6 +90,9 @@
 const MALTA = {
     name: "Malta",
     code: "MT",
+    capitals: [
+        { name: "Valletta", x: "825.8", y: "568.5" }
+    ],
     viewBox: "0 0 1000 884",
     states: [
         {

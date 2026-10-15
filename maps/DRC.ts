@@ -90,6 +90,9 @@
 const DRC = {
     name: "Democratic Republic of the Congo",
     code: "CD",
+    capitals: [
+        { name: "Kinshasa", x: "226.9", y: "510.3" }
+    ],
     viewBox: "0 0 1000 994",
     states: [
         {

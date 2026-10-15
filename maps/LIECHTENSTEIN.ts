@@ -90,6 +90,9 @@
 const LIECHTENSTEIN = {
     name: "Liechtenstein",
     code: "LI",
+    capitals: [
+        { name: "Vaduz", x: "428.1", y: "526.9" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

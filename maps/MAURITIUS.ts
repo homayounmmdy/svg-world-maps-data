@@ -90,6 +90,9 @@
 const MAURITIUS = {
     name: "Mauritius",
     code: "MU",
+    capitals: [
+        { name: "Port Louis", x: "283.7", y: "921.9" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

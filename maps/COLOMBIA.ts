@@ -90,6 +90,9 @@
 const COLOMBIA = {
     name: "Colombia",
     code: "CO",
+    capitals: [
+        { name: "Bogotá", x: "509.6", y: "506.3" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

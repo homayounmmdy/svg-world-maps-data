@@ -1,13 +1,13 @@
 # 🗺️ Maps Information Report
 
-**📅 Last Generated:** Thursday, October 15, 2026 at 07:17 PM GMT+3:30
+**📅 Last Generated:** Thursday, October 15, 2026 at 07:22 PM GMT+3:30
 
 ## 📊 Executive Summary
 
 - **Total Maps Available:** 211
 - **Total Regions/States Tracked:** 4,299
 - **Label Support Coverage:** 97.6% (206 out of 211 maps)
-- **Capital Coverage:** 10.0% (21 out of 211 maps)
+- **Capital Coverage:** 31.3% (66 out of 211 maps)
 
 ---
 
@@ -61,33 +61,33 @@ This report provides an automated, real-time overview of all available map confi
 | `cambodia` | Cambodia | JPP | 25 | ✅ Yes | ✅ Yes |
 | `cameroon` | Cameroon | JPP | 10 | ✅ Yes | ❌ No |
 | `canada` | Canada | JPP | 13 | ✅ Yes | ❌ No |
-| `cape_verde` | Cape_verde | JPP | 22 | ✅ Yes | ❌ No |
+| `cape_verde` | Cape_verde | JPP | 22 | ✅ Yes | ✅ Yes |
 | `cayman_islands` | Cayman_islands | JPP | 1 | ✅ Yes | ❌ No |
-| `central_african_republic` | Central african republic | JPP | 17 | ✅ Yes | ❌ No |
-| `chad` | Chad | JPP | 23 | ✅ Yes | ❌ No |
-| `chile` | Chile | JPP | 16 | ✅ Yes | ❌ No |
-| `china` | China | JPP | 34 | ✅ Yes | ❌ No |
-| `colombia` | Colombia | JPP | 33 | ✅ Yes | ❌ No |
+| `central_african_republic` | Central african republic | JPP | 17 | ✅ Yes | ✅ Yes |
+| `chad` | Chad | JPP | 23 | ✅ Yes | ✅ Yes |
+| `chile` | Chile | JPP | 16 | ✅ Yes | ✅ Yes |
+| `china` | China | JPP | 34 | ✅ Yes | ✅ Yes |
+| `colombia` | Colombia | JPP | 33 | ✅ Yes | ✅ Yes |
 | `comoros` | Comoros | JPP | 3 | ✅ Yes | ❌ No |
-| `costa_rica` | Costa_rica | JPP | 7 | ✅ Yes | ❌ No |
-| `cote_d_ivoire` | Côte_d | JPP | 14 | ✅ Yes | ❌ No |
-| `croatia` | Croatia | JPP | 21 | ✅ Yes | ❌ No |
+| `costa_rica` | Costa_rica | JPP | 7 | ✅ Yes | ✅ Yes |
+| `cote_d_ivoire` | Côte_d | JPP | 14 | ✅ Yes | ✅ Yes |
+| `croatia` | Croatia | JPP | 21 | ✅ Yes | ✅ Yes |
 | `cuba` | Cuba | JPP | 16 | ✅ Yes | ❌ No |
 | `curaco` | Curaco | JPP | 1 | ✅ Yes | ❌ No |
 | `cyprus` | Cyprus | JPP | 6 | ✅ Yes | ❌ No |
 | `czech_republic` | Czech_republic | JPP | 14 | ✅ Yes | ❌ No |
-| `drc` | Democratic Republic of the Congo | JPP | 26 | ✅ Yes | ❌ No |
+| `drc` | Democratic Republic of the Congo | JPP | 26 | ✅ Yes | ✅ Yes |
 | `denmark` | Denmark | JPP | 5 | ✅ Yes | ❌ No |
-| `djibouti` | Djibouti | JPP | 6 | ✅ Yes | ❌ No |
+| `djibouti` | Djibouti | JPP | 6 | ✅ Yes | ✅ Yes |
 | `dominica` | Dominica | JPP | 10 | ✅ Yes | ❌ No |
 | `dominican_republic` | Dominican_republic | JPP | 10 | ✅ Yes | ❌ No |
 | `ecuador` | Ecuador | JPP | 24 | ✅ Yes | ❌ No |
 | `egypt` | Egypt | JPP | 27 | ✅ Yes | ❌ No |
-| `el_salvador` | El_salvador | JPP | 14 | ✅ Yes | ❌ No |
+| `el_salvador` | El_salvador | JPP | 14 | ✅ Yes | ✅ Yes |
 | `equatorial_guinea` | Equatorial_guinea | JPP | 7 | ✅ Yes | ❌ No |
 | `eritrea` | Eritrea | JPP | 6 | ✅ Yes | ❌ No |
-| `estonia` | Estonia | JPP | 79 | ✅ Yes | ❌ No |
-| `ethiopia` | Ethiopia | JPP | 12 | ✅ Yes | ❌ No |
+| `estonia` | Estonia | JPP | 79 | ✅ Yes | ✅ Yes |
+| `ethiopia` | Ethiopia | JPP | 12 | ✅ Yes | ✅ Yes |
 | `europe` | Europe | JPP | 45 | ❌ No | ❌ No |
 | `faeroe_islands` | Faeroe_islands | JPP | 1 | ✅ Yes | ❌ No |
 | `falkland_islands` | Falkland_islands | JPP | 1 | ✅ Yes | ❌ No |
@@ -96,54 +96,54 @@ This report provides an automated, real-time overview of all available map confi
 | `france` | France | JPP | 13 | ✅ Yes | ❌ No |
 | `french_polynesia` | French_polynesia | JPP | 5 | ✅ Yes | ❌ No |
 | `gabon` | Gabon | JPP | 9 | ✅ Yes | ❌ No |
-| `georgia` | Georgia | JPP | 12 | ✅ Yes | ❌ No |
+| `georgia` | Georgia | JPP | 12 | ✅ Yes | ✅ Yes |
 | `germany` | Germany | JPP | 16 | ✅ Yes | ✅ Yes |
-| `ghana` | Ghana | JPP | 16 | ✅ Yes | ❌ No |
+| `ghana` | Ghana | JPP | 16 | ✅ Yes | ✅ Yes |
 | `gb` | Great British | JPP | 232 | ✅ Yes | ❌ No |
 | `greece` | Greece | JPP | 14 | ✅ Yes | ❌ No |
 | `greenland` | Greenland | JPP | 5 | ✅ Yes | ❌ No |
-| `grenada` | Grenada | JPP | 7 | ✅ Yes | ❌ No |
-| `guatemala` | Guatemala | JPP | 22 | ✅ Yes | ❌ No |
-| `guinea` | Guinea | JPP | 34 | ✅ Yes | ❌ No |
-| `guinea_bissau` | Guinea-bissau | JPP | 9 | ✅ Yes | ❌ No |
+| `grenada` | Grenada | JPP | 7 | ✅ Yes | ✅ Yes |
+| `guatemala` | Guatemala | JPP | 22 | ✅ Yes | ✅ Yes |
+| `guinea` | Guinea | JPP | 34 | ✅ Yes | ✅ Yes |
+| `guinea_bissau` | Guinea-bissau | JPP | 9 | ✅ Yes | ✅ Yes |
 | `guyana` | Guyana | JPP | 10 | ✅ Yes | ❌ No |
 | `haiti` | Haiti | JPP | 10 | ✅ Yes | ❌ No |
 | `honduras` | Honduras | JPP | 18 | ✅ Yes | ❌ No |
 | `hong_kong` | Hong_kong | JPP | 18 | ✅ Yes | ❌ No |
-| `hungary` | Hungary | JPP | 43 | ✅ Yes | ❌ No |
+| `hungary` | Hungary | JPP | 43 | ✅ Yes | ✅ Yes |
 | `iceland` | Iceland | JPP | 8 | ✅ Yes | ❌ No |
-| `india` | India | JPP | 36 | ✅ Yes | ❌ No |
-| `indonesia` | Indonesia | JPP | 34 | ✅ Yes | ❌ No |
+| `india` | India | JPP | 36 | ✅ Yes | ✅ Yes |
+| `indonesia` | Indonesia | JPP | 34 | ✅ Yes | ✅ Yes |
 | `iran` | Iran | JPP | 31 | ❌ No | ❌ No |
 | `iraq` | Iraq | JPP | 5 | ✅ Yes | ❌ No |
-| `ireland` | Ireland | JPP | 26 | ✅ Yes | ❌ No |
-| `israel` | Israel | JPP | 6 | ✅ Yes | ❌ No |
+| `ireland` | Ireland | JPP | 26 | ✅ Yes | ✅ Yes |
+| `israel` | Israel | JPP | 6 | ✅ Yes | ✅ Yes |
 | `italy` | Italy | JPP | 20 | ✅ Yes | ❌ No |
-| `jamaica` | Jamaica | JPP | 14 | ✅ Yes | ❌ No |
+| `jamaica` | Jamaica | JPP | 14 | ✅ Yes | ✅ Yes |
 | `japan` | Japan | JPP | 47 | ✅ Yes | ✅ Yes |
-| `jordan` | Jordan | JPP | 12 | ✅ Yes | ❌ No |
-| `kazakhstan` | Kazakhstan | JPP | 20 | ✅ Yes | ❌ No |
-| `kenya` | Kenya | JPP | 47 | ✅ Yes | ❌ No |
+| `jordan` | Jordan | JPP | 12 | ✅ Yes | ✅ Yes |
+| `kazakhstan` | Kazakhstan | JPP | 20 | ✅ Yes | ✅ Yes |
+| `kenya` | Kenya | JPP | 47 | ✅ Yes | ✅ Yes |
 | `kuwait` | Kuwait | JPP | 6 | ✅ Yes | ❌ No |
-| `kyrgyzstan` | Kyrgyzstan | JPP | 9 | ✅ Yes | ❌ No |
-| `laos` | Laos | JPP | 18 | ✅ Yes | ❌ No |
+| `kyrgyzstan` | Kyrgyzstan | JPP | 9 | ✅ Yes | ✅ Yes |
+| `laos` | Laos | JPP | 18 | ✅ Yes | ✅ Yes |
 | `latvia` | Latvia | JPP | 42 | ✅ Yes | ❌ No |
-| `lebanon` | Lebanon | JPP | 8 | ✅ Yes | ❌ No |
-| `lesotho` | Lesotho | JPP | 10 | ✅ Yes | ❌ No |
+| `lebanon` | Lebanon | JPP | 8 | ✅ Yes | ✅ Yes |
+| `lesotho` | Lesotho | JPP | 10 | ✅ Yes | ✅ Yes |
 | `liberia` | Liberia | JPP | 15 | ✅ Yes | ❌ No |
 | `libya` | Libya | JPP | 22 | ✅ Yes | ❌ No |
-| `liechtenstein` | Liechtenstein | JPP | 11 | ✅ Yes | ❌ No |
-| `lithuania` | Lithuania | JPP | 60 | ✅ Yes | ❌ No |
-| `luxembourg` | Luxembourg | JPP | 12 | ✅ Yes | ❌ No |
-| `macedonia` | Macedonia | JPP | 80 | ✅ Yes | ❌ No |
-| `madagascar` | Madagascar | JPP | 6 | ✅ Yes | ❌ No |
-| `malawi` | Malawi | JPP | 28 | ✅ Yes | ❌ No |
-| `malaysia` | Malaysia | JPP | 16 | ✅ Yes | ❌ No |
-| `maldives` | Maldives | JPP | 21 | ✅ Yes | ❌ No |
-| `mali` | Mali | JPP | 10 | ✅ Yes | ❌ No |
-| `malta` | Malta | JPP | 68 | ✅ Yes | ❌ No |
-| `mauritania` | Mauritania | JPP | 15 | ✅ Yes | ❌ No |
-| `mauritius` | Mauritius | JPP | 12 | ✅ Yes | ❌ No |
+| `liechtenstein` | Liechtenstein | JPP | 11 | ✅ Yes | ✅ Yes |
+| `lithuania` | Lithuania | JPP | 60 | ✅ Yes | ✅ Yes |
+| `luxembourg` | Luxembourg | JPP | 12 | ✅ Yes | ✅ Yes |
+| `macedonia` | Macedonia | JPP | 80 | ✅ Yes | ✅ Yes |
+| `madagascar` | Madagascar | JPP | 6 | ✅ Yes | ✅ Yes |
+| `malawi` | Malawi | JPP | 28 | ✅ Yes | ✅ Yes |
+| `malaysia` | Malaysia | JPP | 16 | ✅ Yes | ✅ Yes |
+| `maldives` | Maldives | JPP | 21 | ✅ Yes | ✅ Yes |
+| `mali` | Mali | JPP | 10 | ✅ Yes | ✅ Yes |
+| `malta` | Malta | JPP | 68 | ✅ Yes | ✅ Yes |
+| `mauritania` | Mauritania | JPP | 15 | ✅ Yes | ✅ Yes |
+| `mauritius` | Mauritius | JPP | 12 | ✅ Yes | ✅ Yes |
 | `mexico` | Mexico | JPP | 32 | ✅ Yes | ❌ No |
 | `moldova` | Moldova | JPP | 37 | ✅ Yes | ❌ No |
 | `monaco` | Monaco | JPP | 1 | ✅ Yes | ❌ No |
@@ -274,33 +274,19 @@ The following maps do not yet have a `capitals` property defined. This means the
 - `burkina_faso` (Burkina_faso)
 - `cameroon` (Cameroon)
 - `canada` (Canada)
-- `cape_verde` (Cape_verde)
 - `cayman_islands` (Cayman_islands)
-- `central_african_republic` (Central african republic)
-- `chad` (Chad)
-- `chile` (Chile)
-- `china` (China)
-- `colombia` (Colombia)
 - `comoros` (Comoros)
-- `costa_rica` (Costa_rica)
-- `cote_d_ivoire` (Côte_d)
-- `croatia` (Croatia)
 - `cuba` (Cuba)
 - `curaco` (Curaco)
 - `cyprus` (Cyprus)
 - `czech_republic` (Czech_republic)
-- `drc` (Democratic Republic of the Congo)
 - `denmark` (Denmark)
-- `djibouti` (Djibouti)
 - `dominica` (Dominica)
 - `dominican_republic` (Dominican_republic)
 - `ecuador` (Ecuador)
 - `egypt` (Egypt)
-- `el_salvador` (El_salvador)
 - `equatorial_guinea` (Equatorial_guinea)
 - `eritrea` (Eritrea)
-- `estonia` (Estonia)
-- `ethiopia` (Ethiopia)
 - `europe` (Europe)
 - `faeroe_islands` (Faeroe_islands)
 - `falkland_islands` (Falkland_islands)
@@ -309,52 +295,21 @@ The following maps do not yet have a `capitals` property defined. This means the
 - `france` (France)
 - `french_polynesia` (French_polynesia)
 - `gabon` (Gabon)
-- `georgia` (Georgia)
-- `ghana` (Ghana)
 - `gb` (Great British)
 - `greece` (Greece)
 - `greenland` (Greenland)
-- `grenada` (Grenada)
-- `guatemala` (Guatemala)
-- `guinea` (Guinea)
-- `guinea_bissau` (Guinea-bissau)
 - `guyana` (Guyana)
 - `haiti` (Haiti)
 - `honduras` (Honduras)
 - `hong_kong` (Hong_kong)
-- `hungary` (Hungary)
 - `iceland` (Iceland)
-- `india` (India)
-- `indonesia` (Indonesia)
 - `iran` (Iran)
 - `iraq` (Iraq)
-- `ireland` (Ireland)
-- `israel` (Israel)
 - `italy` (Italy)
-- `jamaica` (Jamaica)
-- `jordan` (Jordan)
-- `kazakhstan` (Kazakhstan)
-- `kenya` (Kenya)
 - `kuwait` (Kuwait)
-- `kyrgyzstan` (Kyrgyzstan)
-- `laos` (Laos)
 - `latvia` (Latvia)
-- `lebanon` (Lebanon)
-- `lesotho` (Lesotho)
 - `liberia` (Liberia)
 - `libya` (Libya)
-- `liechtenstein` (Liechtenstein)
-- `lithuania` (Lithuania)
-- `luxembourg` (Luxembourg)
-- `macedonia` (Macedonia)
-- `madagascar` (Madagascar)
-- `malawi` (Malawi)
-- `malaysia` (Malaysia)
-- `maldives` (Maldives)
-- `mali` (Mali)
-- `malta` (Malta)
-- `mauritania` (Mauritania)
-- `mauritius` (Mauritius)
 - `mexico` (Mexico)
 - `moldova` (Moldova)
 - `monaco` (Monaco)
@@ -445,4 +400,4 @@ The following maps do not yet have a `capitals` property defined. This means the
 - `zambia` (Zambia)
 - `zimbabwe` (Zimbabwe)
 
-**Total without capitals:** 190 out of 211
+**Total without capitals:** 145 out of 211

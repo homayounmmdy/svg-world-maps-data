@@ -90,6 +90,9 @@
 const MALAWI = {
     name: "Malawi",
     code: "MW",
+    capitals: [
+        { name: "Lilongwe", x: "430.7", y: "588.7" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

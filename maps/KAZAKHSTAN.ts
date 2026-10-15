@@ -90,6 +90,9 @@
 const KAZAKHSTAN = {
     name: "Kazakhstan",
     code: "KZ",
+    capitals: [
+        { name: "Astana", x: "600.4", y: "185" }
+    ],
     viewBox: "0 0 1000 549",
     states: [
         {

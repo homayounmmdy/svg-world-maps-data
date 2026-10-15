@@ -90,6 +90,9 @@
 const MAURITANIA = {
     name: "Mauritania",
     code: "MR",
+    capitals: [
+        { name: "Nouakchott", x: "160.8", y: "707.3" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

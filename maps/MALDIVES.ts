@@ -90,6 +90,9 @@
 const MALDIVES = {
     name: "Maldives",
     code: "MV",
+    capitals: [
+        { name: "Malé", x: "533.6", y: "388.4" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

@@ -90,6 +90,9 @@
 const COSTA_RICA = {
     name: "Costa_rica",
     code: "CR",
+    capitals: [
+        { name: "San José", x: "596", y: "275.5" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

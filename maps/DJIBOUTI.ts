@@ -90,6 +90,9 @@
 const DJIBOUTI = {
     name: "Djibouti",
     code: "DJ",
+    capitals: [
+        { name: "Djibouti", x: "731.1", y: "640.8" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

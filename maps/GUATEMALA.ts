@@ -90,6 +90,9 @@
 const GUATEMALA = {
     name: "Guatemala",
     code: "GT",
+    capitals: [
+        { name: "Guatemala City", x: "450.4", y: "753.8" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

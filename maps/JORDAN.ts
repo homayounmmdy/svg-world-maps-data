@@ -90,6 +90,9 @@
 const JORDAN = {
     name: "Jordan",
     code: "JO",
+    capitals: [
+        { name: "Amman", x: "352.6", y: "447.8" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

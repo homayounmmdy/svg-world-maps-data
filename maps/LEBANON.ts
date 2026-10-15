@@ -90,6 +90,9 @@
 const LEBANON = {
     name: "Lebanon",
     code: "LB",
+    capitals: [
+        { name: "Beirut", x: "337.2", y: "494.2" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

@@ -90,6 +90,9 @@
 const COTE_D_IVOIRE  = {
     name: "Côte_d'ivoire",
     code: "CI",
+    capitals: [
+        { name: "Yamoussoukro", x: "540.4", y: "590.8" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

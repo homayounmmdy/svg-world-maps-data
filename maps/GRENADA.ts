@@ -90,6 +90,9 @@
 const GRENADA = {
     name: "Grenada",
     code: "GD",
+    capitals: [
+        { name: "Saint George's", x: "302.3", y: "858.7" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

@@ -90,6 +90,9 @@
 const ETHIOPIA = {
     name: "Ethiopia",
     code: "ET",
+    capitals: [
+        { name: "Addis Ababa", x: "396.5", y: "398.5" }
+    ],
     viewBox: "0 0 1000 774",
     states: [
         {

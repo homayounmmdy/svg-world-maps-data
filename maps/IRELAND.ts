@@ -90,6 +90,9 @@
 const IRELAND = {
     name: "Ireland",
     code: "IE",
+    capitals: [
+        { name: "Dublin", x: "760.9", y: "531.5" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

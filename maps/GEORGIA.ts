@@ -90,6 +90,9 @@
 const GEORGIA = {
     name: "Georgia",
     code: "GE",
+    capitals: [
+        { name: "Tbilisi", x: "699.7", y: "367.5" }
+    ],
     viewBox: "0 0 1000 510",
     states: [
         {

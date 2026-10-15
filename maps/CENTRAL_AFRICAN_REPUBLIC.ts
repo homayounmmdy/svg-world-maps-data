@@ -90,6 +90,9 @@
 const CENTRAL_AFRICAN_REPUBLIC = {
     name: "Central african republic",
     code: "CF",
+    capitals: [
+        { name: "Bangui", x: "334.6", y: "495.3" }
+    ],
     viewBox: "0 0 1000 677",
     states: [
         {

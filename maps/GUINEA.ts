@@ -90,6 +90,9 @@
 const GUINEA = {
     name: "Guinea",
     code: "GN",
+    capitals: [
+        { name: "Conakry", x: "217.4", y: "425.3" }
+    ],
     viewBox: "0 0 1000 751",
     states: [
         {

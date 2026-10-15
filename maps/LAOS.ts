@@ -90,6 +90,9 @@
 const LAOS = {
     name: "Laos",
     code: "LA",
+    capitals: [
+        { name: "Vientiane", x: "332.7", y: "445.1" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

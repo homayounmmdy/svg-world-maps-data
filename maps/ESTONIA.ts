@@ -90,6 +90,9 @@
 const ESTONIA = {
     name: "Estonia",
     code: "EE",
+    capitals: [
+        { name: "Tallinn", x: "463.9", y: "147.5" }
+    ],
     viewBox: "0 0 1000 690",
     states: [
         {

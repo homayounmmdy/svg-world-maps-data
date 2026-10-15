@@ -90,6 +90,9 @@
 const JAMAICA = {
     name: "Jamaica",
     code: "JM",
+    capitals: [
+        { name: "Kingston", x: "714.7", y: "256.6" }
+    ],
     viewBox: "0 0 1000 395",
     states: [
         {

@@ -90,6 +90,9 @@
 const ISRAEL = {
     name: "Israel",
     code: "IL",
+    capitals: [
+        { name: "Jerusalem", x: "493.5", y: "434.3" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

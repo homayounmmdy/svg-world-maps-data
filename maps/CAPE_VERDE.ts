@@ -90,6 +90,9 @@
 const CAPE_VERDE = {
     name: "Cape_verde",
     code: "CV",
+    capitals: [
+        { name: "Praia", x: "668.2", y: "833.2" }
+    ],
     viewBox: "0 0 1000 924",
     states: [
         {

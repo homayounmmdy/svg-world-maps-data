@@ -90,6 +90,9 @@
 const CHAD = {
     name: "Chad",
     code: "TD",
+    capitals: [
+        { name: "N'Djamena", x: "299.4", y: "694.7" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

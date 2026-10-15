@@ -90,6 +90,9 @@
 const CHINA = {
     name: "China",
     code: "CN",
+    capitals: [
+        { name: "Beijing", x: "682.1", y: "324.3" }
+    ],
     viewBox: "0 0 1000 738",
     states: [
         {

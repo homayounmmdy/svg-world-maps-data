@@ -90,6 +90,9 @@
 const MADAGASCAR = {
     name: "Madagascar",
     code: "MG",
+    capitals: [
+        { name: "Antananarivo", x: "498.8", y: "500.8" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

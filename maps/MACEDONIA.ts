@@ -90,6 +90,9 @@
 const MACEDONIA = {
     name: "Macedonia",
     code: "MK",
+    capitals: [
+        { name: "Skopje", x: "485.9", y: "268.2" }
+    ],
     viewBox: "0 0 1000 793",
     states: [
         {

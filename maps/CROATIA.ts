@@ -90,6 +90,9 @@
 const CROATIA = {
     name: "Croatia",
     code: "HR",
+    capitals: [
+        { name: "Zagreb", x: "479.6", y: "185.1" }
+    ],
     viewBox: "0 0 1000 981",
     states: [
         {

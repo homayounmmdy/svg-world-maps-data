@@ -90,6 +90,9 @@
 const EL_SALVADOR = {
     name: "El_salvador",
     code: "SV",
+    capitals: [
+        { name: "San Salvador", x: "406.6", y: "297.7" }
+    ],
     viewBox: "0 0 1000 547",
     states: [
         {

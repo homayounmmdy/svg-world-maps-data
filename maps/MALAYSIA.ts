@@ -90,6 +90,9 @@
 const MALAYSIA = {
     name: "Malaysia",
     code: "MY",
+    capitals: [
+        { name: "Kuala Lumpur", x: "140.3", y: "210.9" }
+    ],
     viewBox: "0 0 1000 332",
     states: [
         {

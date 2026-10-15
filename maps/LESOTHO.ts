@@ -90,6 +90,9 @@
 const LESOTHO = {
     name: "Lesotho",
     code: "LS",
+    capitals: [
+        { name: "Maseru", x: "356.3", y: "471.6" }
+    ],
     viewBox: "0 0 1000 987",
     states: [
         {

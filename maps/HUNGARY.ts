@@ -90,6 +90,9 @@
 const HUNGARY = {
     name: "Hungary",
     code: "HU",
+    capitals: [
+        { name: "Budapest", x: "448.9", y: "245.5" }
+    ],
     viewBox: "0 0 1000 613",
     states: [
         {

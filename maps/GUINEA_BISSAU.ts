@@ -90,6 +90,9 @@
 const GUINEA_BISSAU = {
     name: "Guinea-bissau",
     code: "GW",
+    capitals: [
+        { name: "Bissau", x: "373.4", y: "268.2" }
+    ],
     viewBox: "0 0 1000 583",
     states: [
         {

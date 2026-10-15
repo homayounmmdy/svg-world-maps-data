@@ -90,6 +90,9 @@
 const LUXEMBOURG = {
     name: "Luxembourg",
     code: "LU",
+    capitals: [
+        { name: "Luxembourg", x: "538.8", y: "751.4" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

@@ -90,6 +90,9 @@
 const GHANA = {
     name: "Ghana",
     code: "GH",
+    capitals: [
+        { name: "Accra", x: "666.3", y: "789.2" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

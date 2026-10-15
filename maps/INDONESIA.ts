@@ -90,6 +90,9 @@
 const INDONESIA = {
     name: "Indonesia",
     code: "ID",
+    capitals: [
+        { name: "Jakarta", x: "279.6", y: "257" }
+    ],
     viewBox: "0 0 1000 368",
     states: [
         {

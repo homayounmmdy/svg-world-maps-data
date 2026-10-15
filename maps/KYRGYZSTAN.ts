@@ -90,6 +90,9 @@
 const KYRGYZSTAN = {
     name: "Kyrgyzstan",
     code: "KG",
+    capitals: [
+        { name: "Bishkek", x: "487.6", y: "64.3" }
+    ],
     viewBox: "0 0 1000 492",
     states: [
         {

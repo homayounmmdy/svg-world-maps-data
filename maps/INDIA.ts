@@ -90,6 +90,9 @@
 const INDIA = {
   name: "India",
   code: "IN",
+  capitals: [
+      { name: "New Delhi", x: "344.1", y: "320" }
+  ],
   viewBox: "0 0 1000 1000",
   states: [
     {

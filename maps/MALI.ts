@@ -90,6 +90,9 @@
 const MALI = {
     name: "Mali",
     code: "ML",
+    capitals: [
+        { name: "Bamako", x: "280.7", y: "766.1" }
+    ],
     viewBox: "0 0 1000 949",
     states: [
         {

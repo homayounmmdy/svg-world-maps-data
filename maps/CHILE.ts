@@ -90,6 +90,9 @@
 const CHILE = {
     name: "Chile",
     code: "CL",
+    capitals: [
+        { name: "Santiago", x: "506", y: "368.5" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

@@ -90,6 +90,9 @@
 const KENYA = {
     name: "Kenya",
     code: "KE",
+    capitals: [
+        { name: "Nairobi", x: "405", y: "650.1" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {
