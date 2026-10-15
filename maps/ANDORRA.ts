@@ -90,6 +90,9 @@
 const ANDORRA = {
     name: "Andorra",
     code: "AD",
+    capitals: [
+        { name: "Andorra la Vella", x: "308.5", y: "513.4" }
+    ],
     viewBox: "0 0 1000 835",
     states: [
         {

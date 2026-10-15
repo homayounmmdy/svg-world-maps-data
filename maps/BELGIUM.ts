@@ -90,6 +90,9 @@
 const BELGIUM = {
     name: "Belgium",
     code: "BE",
+    capitals: [
+        { name: "Brussels", x: "481.1", y: "286.8" }
+    ],
     viewBox: "0 0 1000 817",
     states: [
         {

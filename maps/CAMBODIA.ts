@@ -90,6 +90,9 @@
 const CAMBODIA = {
     name: "Cambodia",
     code: "KH",
+    capitals: [
+        { name: "Phnom Penh", x: "479.5", y: "591.4" }
+    ],
     viewBox: "0 0 1000 834",
     states: [
         {

@@ -90,6 +90,9 @@
 const BHUTAN = {
     name: "Bhutan",
     code: "BT",
+    capitals: [
+        { name: "Thimphu", x: "278.4", y: "261.4" }
+    ],
     viewBox: "0 0 1000 522",
     states: [
         {

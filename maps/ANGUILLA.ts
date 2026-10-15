@@ -90,6 +90,9 @@
 const ANGUILLA = {
     name: "Anguilla",
     code: "AI",
+    capitals: [
+        { name: "The Valley", x: "454.9", y: "268.6" }
+    ],
     viewBox: "0 0 1000 557",
     states: [
         {

@@ -90,6 +90,9 @@
 const ANGOLA = {
     name: "Angola",
     code: "AO",
+    capitals: [
+        { name: "Luanda", x: "204.1", y: "345.5" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

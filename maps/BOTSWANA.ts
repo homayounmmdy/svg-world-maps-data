@@ -90,6 +90,9 @@
 const BOTSWANA = {
     name: "Botswana",
     code: "BW",
+    capitals: [
+        { name: "Gaborone", x: "610", y: "729.2" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

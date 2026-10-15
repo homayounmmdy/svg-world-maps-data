@@ -90,6 +90,9 @@
 const BURUNDI = {
     name: "Burundi",
     code: "BI",
+    capitals: [
+        { name: "Gitega", x: "512.3", y: "586.9" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

@@ -1,13 +1,13 @@
 # 🗺️ Maps Information Report
 
-**📅 Last Generated:** Thursday, October 15, 2026 at 07:08 PM GMT+3:30
+**📅 Last Generated:** Thursday, October 15, 2026 at 07:17 PM GMT+3:30
 
 ## 📊 Executive Summary
 
 - **Total Maps Available:** 211
 - **Total Regions/States Tracked:** 4,299
 - **Label Support Coverage:** 97.6% (206 out of 211 maps)
-- **Capital Coverage:** 2.8% (6 out of 211 maps)
+- **Capital Coverage:** 10.0% (21 out of 211 maps)
 
 ---
 
@@ -29,36 +29,36 @@ This report provides an automated, real-time overview of all available map confi
 | `africa` | Africa | JPP | 50 | ❌ No | ❌ No |
 | `albania` | Albania | JPP | 12 | ✅ Yes | ❌ No |
 | `algeria` | Algeria | JPP | 58 | ✅ Yes | ❌ No |
-| `andorra` | Andorra | JPP | 7 | ✅ Yes | ❌ No |
-| `angola` | Angola | JPP | 18 | ✅ Yes | ❌ No |
-| `anguilla` | Anguilla | JPP | 14 | ✅ Yes | ❌ No |
-| `antigua_and_barbuda` | Antigua_and_barbuda | JPP | 8 | ✅ Yes | ❌ No |
-| `argentina` | Argentina | JPP | 24 | ✅ Yes | ❌ No |
-| `armenia` | Armenia | JPP | 11 | ✅ Yes | ❌ No |
+| `andorra` | Andorra | JPP | 7 | ✅ Yes | ✅ Yes |
+| `angola` | Angola | JPP | 18 | ✅ Yes | ✅ Yes |
+| `anguilla` | Anguilla | JPP | 14 | ✅ Yes | ✅ Yes |
+| `antigua_and_barbuda` | Antigua_and_barbuda | JPP | 8 | ✅ Yes | ✅ Yes |
+| `argentina` | Argentina | JPP | 24 | ✅ Yes | ✅ Yes |
+| `armenia` | Armenia | JPP | 11 | ✅ Yes | ✅ Yes |
 | `aruba` | Aruba | JPP | 1 | ✅ Yes | ❌ No |
 | `australia` | Australia | JPP | 8 | ✅ Yes | ❌ No |
 | `austria` | Austria | JPP | 9 | ✅ Yes | ❌ No |
 | `azerbaijan` | Azerbaijan | JPP | 77 | ✅ Yes | ❌ No |
 | `bahamas` | Bahamas | JPP | 32 | ✅ Yes | ❌ No |
 | `bahrain` | Bahrain | JPP | 4 | ✅ Yes | ❌ No |
-| `bangladesh` | Bangladesh | JPP | 8 | ✅ Yes | ❌ No |
+| `bangladesh` | Bangladesh | JPP | 8 | ✅ Yes | ✅ Yes |
 | `barbados` | Barbados | JPP | 11 | ✅ Yes | ❌ No |
-| `belarus` | Belarus | JPP | 7 | ✅ Yes | ❌ No |
-| `belgium` | Belgium | JPP | 3 | ✅ Yes | ❌ No |
+| `belarus` | Belarus | JPP | 7 | ✅ Yes | ✅ Yes |
+| `belgium` | Belgium | JPP | 3 | ✅ Yes | ✅ Yes |
 | `belize` | Belize | JPP | 6 | ✅ Yes | ❌ No |
 | `benin` | Benin | JPP | 12 | ✅ Yes | ❌ No |
-| `bermuda` | Bermuda | JPP | 11 | ✅ Yes | ❌ No |
-| `bhutan` | Bhutan | JPP | 20 | ✅ Yes | ❌ No |
+| `bermuda` | Bermuda | JPP | 11 | ✅ Yes | ✅ Yes |
+| `bhutan` | Bhutan | JPP | 20 | ✅ Yes | ✅ Yes |
 | `bolivia` | Bolivia | JPP | 9 | ✅ Yes | ❌ No |
 | `bosnia_and_herzegovina` | Bosnia and herzegovina | JPP | 3 | ✅ Yes | ❌ No |
-| `botswana` | Botswana | JPP | 16 | ✅ Yes | ❌ No |
+| `botswana` | Botswana | JPP | 16 | ✅ Yes | ✅ Yes |
 | `brazil` | Brazil | JPP | 27 | ✅ Yes | ❌ No |
 | `british_virgin_islands` | British virgin islands | JPP | 1 | ✅ Yes | ❌ No |
 | `brunei` | Brunei | JPP | 4 | ✅ Yes | ❌ No |
-| `bulgaria` | Bulgaria | JPP | 28 | ✅ Yes | ❌ No |
+| `bulgaria` | Bulgaria | JPP | 28 | ✅ Yes | ✅ Yes |
 | `burkina_faso` | Burkina_faso | JPP | 45 | ✅ Yes | ❌ No |
-| `burundi` | Burundi | JPP | 18 | ✅ Yes | ❌ No |
-| `cambodia` | Cambodia | JPP | 25 | ✅ Yes | ❌ No |
+| `burundi` | Burundi | JPP | 18 | ✅ Yes | ✅ Yes |
+| `cambodia` | Cambodia | JPP | 25 | ✅ Yes | ✅ Yes |
 | `cameroon` | Cameroon | JPP | 10 | ✅ Yes | ❌ No |
 | `canada` | Canada | JPP | 13 | ✅ Yes | ❌ No |
 | `cape_verde` | Cape_verde | JPP | 22 | ✅ Yes | ❌ No |
@@ -257,36 +257,21 @@ The following maps do not yet have a `capitals` property defined. This means the
 - `africa` (Africa)
 - `albania` (Albania)
 - `algeria` (Algeria)
-- `andorra` (Andorra)
-- `angola` (Angola)
-- `anguilla` (Anguilla)
-- `antigua_and_barbuda` (Antigua_and_barbuda)
-- `argentina` (Argentina)
-- `armenia` (Armenia)
 - `aruba` (Aruba)
 - `australia` (Australia)
 - `austria` (Austria)
 - `azerbaijan` (Azerbaijan)
 - `bahamas` (Bahamas)
 - `bahrain` (Bahrain)
-- `bangladesh` (Bangladesh)
 - `barbados` (Barbados)
-- `belarus` (Belarus)
-- `belgium` (Belgium)
 - `belize` (Belize)
 - `benin` (Benin)
-- `bermuda` (Bermuda)
-- `bhutan` (Bhutan)
 - `bolivia` (Bolivia)
 - `bosnia_and_herzegovina` (Bosnia and herzegovina)
-- `botswana` (Botswana)
 - `brazil` (Brazil)
 - `british_virgin_islands` (British virgin islands)
 - `brunei` (Brunei)
-- `bulgaria` (Bulgaria)
 - `burkina_faso` (Burkina_faso)
-- `burundi` (Burundi)
-- `cambodia` (Cambodia)
 - `cameroon` (Cameroon)
 - `canada` (Canada)
 - `cape_verde` (Cape_verde)
@@ -460,4 +445,4 @@ The following maps do not yet have a `capitals` property defined. This means the
 - `zambia` (Zambia)
 - `zimbabwe` (Zimbabwe)
 
-**Total without capitals:** 205 out of 211
+**Total without capitals:** 190 out of 211

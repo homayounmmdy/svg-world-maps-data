@@ -90,6 +90,9 @@
 const BERMUDA = {
     name: "Bermuda",
     code: "BM",
+    capitals: [
+        { name: "Hamilton", x: "677.5", y: "222.9" }
+    ],
     viewBox: "0 0 1000 698",
     states: [
         {

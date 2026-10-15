@@ -90,6 +90,9 @@
 const ARMENIA = {
     name: "Armenia",
     code: "AM",
+    capitals: [
+        { name: "Yerevan", x: "358.3", y: "474.6" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

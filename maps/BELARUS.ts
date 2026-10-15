@@ -90,6 +90,9 @@
 const BELARUS = {
     name: "Belarus",
     code: "BY",
+    capitals: [
+        { name: "Minsk", x: "458.7", y: "531.4" }
+    ],
     viewBox: "0 0 1000 871",
     states: [
         {

@@ -90,6 +90,9 @@
 const BANGLADESH = {
     name: "Bangladesh",
     code: "BD",
+    capitals: [
+        { name: "Dhaka", x: "485.3", y: "471.6" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

@@ -90,6 +90,9 @@
 const ARGENTINA = {
     name: "Argentina",
     code: "AR",
+    capitals: [
+        { name: "Buenos Aires", x: "568.1", y: "394" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

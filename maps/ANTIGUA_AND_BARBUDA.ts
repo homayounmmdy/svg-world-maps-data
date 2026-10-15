@@ -90,6 +90,9 @@
 const ANTIGUA_AND_BARBUDA = {
     name: "Antigua_and_barbuda",
     code: "AG",
+    capitals: [
+        { name: "Saint John's", x: "699.9", y: "752.9" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

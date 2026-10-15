@@ -90,6 +90,9 @@
 const BULGARIA = {
     name: "Bulgaria",
     code: "BG",
+    capitals: [
+        { name: "Sofia", x: "261.2", y: "317" }
+    ],
     viewBox: "0 0 1000 651",
     states: [
         {
