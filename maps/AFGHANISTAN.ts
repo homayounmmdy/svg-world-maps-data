@@ -470,6 +470,7 @@ const AFGHANISTAN = {
       name: "Daykundi",
     },
   ],
+  capitals: [{ name: "Kabul", x: "591.7", y: "339.5" }],
 };
 
 export default AFGHANISTAN;
