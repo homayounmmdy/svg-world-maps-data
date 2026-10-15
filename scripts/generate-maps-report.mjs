@@ -31,7 +31,7 @@ const __dirname = path.dirname(__filename);
 
 // ─── Configuration ──────────────────────────────────────────────────────────
 const MAPS_DIR = path.join(process.cwd(), "maps");
-const OUTPUT_FILE = path.join(process.cwd(), "MAPS_INFO.html");
+const OUTPUT_FILE = path.join(process.cwd(), "index.html");
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 function escapeHtml(value) {
