@@ -2,12 +2,15 @@
 /**
  * inject-capitals.js
  *
- * Reads capitals.json, scans the maps folder, matches each map by filename
- * (or its `name:` field as a fallback), then injects/updates a `capitals`
- * property in the map object.
+ * Reads capitals.json and, for each entry, finds the matching map file
+ * by filename (or by the map's internal `name:` field as a fallback),
+ * then injects/updates a `capitals` property in that map object.
  *
- * `capitals` is ALWAYS written as an array of { name, x, y } objects so that
+ * `capitals` is ALWAYS written as an array of { name, x, y } objects so
  * countries with multiple capitals (e.g. South Africa) work naturally.
+ *
+ * Only entries listed in capitals.json are processed — the rest of the maps
+ * folder is left untouched.
  *
  * capitals.json accepts either form per entry:
  *   { "filename": "GERMANY",        "capitals": "Berlin" }
@@ -57,8 +60,6 @@ if (!Array.isArray(capitalsRaw)) {
 
 /**
  * Normalize a capitals entry into an array of non-empty strings.
- *   "Berlin"                          → ["Berlin"]
- *   ["Pretoria","Cape Town"]          → ["Pretoria","Cape Town"]
  */
 function normalizeCapitals(value) {
   if (value == null) return [];
@@ -66,14 +67,6 @@ function normalizeCapitals(value) {
   return arr
     .map((v) => (typeof v === 'string' ? v.trim() : String(v).trim()))
     .filter(Boolean);
-}
-
-// lowercase filename → [capitalName, ...]
-const capitalsLookup = new Map();
-for (const entry of capitalsRaw) {
-  if (!entry || typeof entry.filename !== 'string') continue;
-  const list = normalizeCapitals(entry.capitals);
-  capitalsLookup.set(entry.filename.toLowerCase(), list);
 }
 
 // ───────────────────────────── Helpers ─────────────────────────
@@ -110,7 +103,6 @@ function extractLabels(code) {
   const open = code.indexOf('[', labelsKeyIdx);
   if (open === -1) return [];
 
-  // Bracket-match to find the end of the labels array
   let depth = 0;
   let close = -1;
   for (let i = open; i < code.length; i++) {
@@ -151,17 +143,14 @@ function extractLabels(code) {
 
 /**
  * Find a label whose name matches the capital (case-insensitive).
- * Returns the label or null.
  */
 function findCapitalLabel(labels, capitalName) {
   if (!capitalName) return null;
   const target = String(capitalName).trim().toLowerCase();
 
-  // Exact match first
   let hit = labels.find((l) => l.name.trim().toLowerCase() === target);
   if (hit) return hit;
 
-  // Then "contains" match (e.g. "Sana'a" vs "Sana'a City")
   hit = labels.find((l) => {
     const n = l.name.trim().toLowerCase();
     return n.includes(target) || target.includes(n);
@@ -171,7 +160,6 @@ function findCapitalLabel(labels, capitalName) {
 
 /**
  * Format the capitals value as a TS array literal of { name, x, y } objects.
- * `resolved` is [{ name, x, y }] (x/y may be null if no label found).
  */
 function formatCapitalsArray(resolved, indent) {
   if (resolved.length === 0) return '[]';
@@ -194,21 +182,26 @@ if (!fs.existsSync(MAPS_DIR)) {
   process.exit(1);
 }
 
-const files = walk(MAPS_DIR);
+// Index every .ts file once so lookups are O(1)
+const allFiles = walk(MAPS_DIR);
+const fileByBase = new Map(); // lowercase base name → full path
+for (const f of allFiles) {
+  const base = stripExt(path.basename(f)).toLowerCase();
+  if (!fileByBase.has(base)) fileByBase.set(base, f);
+}
 
 console.log('');
 console.log(`📁 Maps     : ${MAPS_DIR}`);
-console.log(`📄 Capitals : ${CAPITALS_FILE}  (${capitalsLookup.size} entr${capitalsLookup.size === 1 ? 'y' : 'ies'})`);
+console.log(`📄 Capitals : ${CAPITALS_FILE}  (${capitalsRaw.length} entr${capitalsRaw.length === 1 ? 'y' : 'ies'})`);
 console.log(`🔧 Mode     : ${WRITE ? 'WRITE (changes will be saved)' : 'DRY RUN (no files touched)'}`);
-console.log(`   Found ${files.length} .ts file(s)\n`);
+console.log(`   Indexed ${allFiles.length} .ts file(s)\n`);
 
-if (files.length === 0) {
+if (capitalsRaw.length === 0) {
   console.log('Nothing to do.');
   process.exit(0);
 }
 
 // Regexes (anchored per-line, multiline)
-// Matches an existing capitals value that is either a string OR an array literal.
 const RE_EXISTING_CAPITALS =
   /^([ \t]*)capitals\s*:\s*(?:\[[\s\S]*?\]|["'`][^"'`]*["'`])\s*,?[ \t]*$/m;
 const RE_CODE = /^([ \t]*)code\s*:\s*["'`][^"'`]*["'`]\s*,?[ \t]*$/m;
@@ -216,68 +209,78 @@ const RE_NAME = /^([ \t]*)name\s*:\s*["'`][^"'`]*["'`]\s*,?[ \t]*$/m;
 const RE_STATES = /^([ \t]*)states\s*:/m;
 const RE_NAME_VALUE = /\bname\s*:\s*["'`]([^"'`]+)["'`]/;
 
-let matched = 0;
+let processed = 0;
 let injected = 0;
 let updated = 0;
-let skipped = 0;
-let withCoords = 0;
-let withoutCoords = 0;
-const usedCapitals = new Set();
+let alreadyOk = 0;
 
-for (const file of files) {
-  const rel = path.relative(MAPS_DIR, file);
-  const base = stripExt(path.basename(file));
-  const code = fs.readFileSync(file, 'utf8');
+// Everything that couldn't be fully resolved goes here
+const lost = []; // { filename, capital?, reason }
 
-  // 1) Try match by filename
-  let capitalNames = capitalsLookup.get(base.toLowerCase());
+for (const entry of capitalsRaw) {
+  if (!entry || typeof entry.filename !== 'string') {
+    lost.push({
+      filename: entry && entry.filename,
+      reason: 'invalid entry (missing "filename")',
+    });
+    continue;
+  }
+
+  const filename = entry.filename;
+  const capitalNames = normalizeCapitals(entry.capitals);
+
+  if (capitalNames.length === 0) {
+    lost.push({ filename, reason: 'no capitals listed' });
+    continue;
+  }
+
+  // ── Find the map file ──────────────────────────────────────
+  let file = fileByBase.get(filename.toLowerCase());
   let matchedBy = 'filename';
 
-  // 2) Fallback: match by internal `name:` value
-  if (capitalNames === undefined) {
-    const m = code.match(RE_NAME_VALUE);
-    if (m) {
-      const byName = capitalsLookup.get(m[1].toLowerCase());
-      if (byName !== undefined) {
-        capitalNames = byName;
+  // Fallback: search by internal `name:` field
+  if (!file) {
+    for (const f of allFiles) {
+      const src = fs.readFileSync(f, 'utf8');
+      const m = src.match(RE_NAME_VALUE);
+      if (m && m[1].toLowerCase() === filename.toLowerCase()) {
+        file = f;
         matchedBy = 'name';
+        break;
       }
     }
   }
 
-  if (capitalNames === undefined) {
-    console.log(`· ${rel}  → no capital match`);
-    skipped++;
+  if (!file) {
+    lost.push({ filename, reason: 'map file not found' });
+    console.log(`✖ ${filename}  → map file not found (lost)`);
     continue;
   }
 
-  matched++;
-  for (const c of capitalNames) usedCapitals.add(c.toLowerCase());
+  const rel = path.relative(MAPS_DIR, file);
+  const code = fs.readFileSync(file, 'utf8');
 
-  // ── Look up x/y for each capital from the labels array ─────
+  // ── Resolve each capital against the labels array ──────────
   const labels = extractLabels(code);
-  const resolved = capitalNames.map((name) => {
+  const resolved = [];
+  for (const name of capitalNames) {
     const label = findCapitalLabel(labels, name);
     if (label) {
-      withCoords++;
-      return { name, x: label.x, y: label.y };
-    }
-    withoutCoords++;
-    if (labels.length) {
-      console.log(
-        `   ⚠ ${rel}: label for "${name}" not found among ${labels.length} label(s)`
-      );
+      resolved.push({ name, x: label.x, y: label.y });
     } else {
-      console.log(`   ⚠ ${rel}: no labels array found for "${name}"`);
+      resolved.push({ name, x: null, y: null });
+      lost.push({ filename, capital: name, reason: 'label not found in map' });
+      console.log(
+        `   ⚠ ${rel}: label for "${name}" not found (${labels.length} label(s) scanned)`
+      );
     }
-    return { name, x: null, y: null };
-  });
+  }
 
-  // Detect indent by looking at existing code/name line, default 4 spaces
+  // Detect indent from existing code/name line, default 4 spaces
   const indentMatch = code.match(/^([ \t]*)(?:code|name)\s*:/m);
   const indent = indentMatch ? indentMatch[1] : '    ';
 
-  const quoted = formatCapitalsArray(resolved, indent);
+  processed++;
 
   // Case A: capitals already exists → replace value
   if (RE_EXISTING_CAPITALS.test(code)) {
@@ -290,7 +293,7 @@ for (const file of files) {
       console.log(`↻ ${rel}  [${matchedBy}] → capitals updated (${capitalNames.length})`);
       if (WRITE) fs.writeFileSync(file, newCode, 'utf8');
     } else {
-      skipped++;
+      alreadyOk++;
       console.log(`= ${rel}  [${matchedBy}] → already up to date`);
     }
     continue;
@@ -317,8 +320,8 @@ for (const file of files) {
   }
 
   if (!newCode || newCode === code) {
+    lost.push({ filename, reason: 'no safe insertion point in map' });
     console.log(`⚠ ${rel}  matched but no safe insertion point`);
-    skipped++;
     continue;
   }
 
@@ -331,18 +334,23 @@ for (const file of files) {
 
 console.log('');
 console.log('═'.repeat(60));
-console.log(
-  `Matched: ${matched}  ·  Injected: ${injected}  ·  Updated: ${updated}  ·  Skipped: ${skipped}`
-);
-console.log(
-  `Capitals resolved with coords: ${withCoords}  ·  Without coords: ${withoutCoords}`
-);
+console.log(`Entries in capitals.json : ${capitalsRaw.length}`);
+console.log(`Maps processed           : ${processed}`);
+console.log(`  + injected             : ${injected}`);
+console.log(`  ↻ updated              : ${updated}`);
+console.log(`  = already up to date   : ${alreadyOk}`);
+console.log(`Lost (unresolved)        : ${lost.length}`);
 
-// Which entries in capitals.json were never used?
-const unused = [...capitalsLookup.keys()].filter((k) => !usedCapitals.has(k));
-if (unused.length) {
-  console.log(`\n⚠ Capitals with no matching map file (${unused.length}):`);
-  for (const k of unused) console.log(`   - ${k}`);
+if (lost.length) {
+  console.log('\n🗺  LOST');
+  console.log('─'.repeat(60));
+  for (const l of lost) {
+    if (l.capital) {
+      console.log(`  ${l.filename} → "${l.capital}"  ·  ${l.reason}`);
+    } else {
+      console.log(`  ${l.filename}  ·  ${l.reason}`);
+    }
+  }
 }
 
 if (!WRITE) {

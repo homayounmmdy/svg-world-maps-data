@@ -90,7 +90,9 @@
 const GERMANY = {
   name: "Germany",
   code: "DE",
-  capitals: [{ name: "Berlin", x: "718", y: "359" }],
+  capitals: [
+      { name: "Berlin", x: "718", y: "359" }
+  ],
   viewBox: "0 0 1000 1000",
   states: [
     {
