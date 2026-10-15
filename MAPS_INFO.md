@@ -1,17 +1,17 @@
 # 🗺️ Maps Information Report
 
-**📅 Last Generated:** Thursday, October 8, 2026 at 11:29 PM GMT+3:30
+**📅 Last Generated:** Thursday, October 15, 2026 at 07:08 PM GMT+3:30
 
 ## 📊 Executive Summary
 
 - **Total Maps Available:** 211
 - **Total Regions/States Tracked:** 4,299
 - **Label Support Coverage:** 97.6% (206 out of 211 maps)
+- **Capital Coverage:** 2.8% (6 out of 211 maps)
 
 ---
 
 ## ℹ️ About this Report
-
 This report provides an automated, real-time overview of all available map configurations located in the `maps` directory.
 
 - **Command**: The identifier used to reference or add the map.
@@ -19,231 +19,445 @@ This report provides an automated, real-time overview of all available map confi
 - **Code**: The standard short code assigned to the map.
 - **Regions/States**: The total number of state/province objects defined.
 - **Has Labels**: Indicates whether coordinate labels are defined for text placement.
+- **Has Capitals**: Indicates whether a `capitals` property is defined for the map.
 
 ## 🗺️ Map Details
 
-| Command                            | Country Name                     | Code | Regions/States | Has Labels |
-| ---------------------------------- | -------------------------------- | ---- | -------------- | ---------- |
-| `afghanistan`                      | Afghanistan                      | JPP  | 34             | ✅ Yes     |
-| `africa`                           | Africa                           | JPP  | 50             | ❌ No      |
-| `albania`                          | Albania                          | JPP  | 12             | ✅ Yes     |
-| `algeria`                          | Algeria                          | JPP  | 58             | ✅ Yes     |
-| `andorra`                          | Andorra                          | JPP  | 7              | ✅ Yes     |
-| `angola`                           | Angola                           | JPP  | 18             | ✅ Yes     |
-| `anguilla`                         | Anguilla                         | JPP  | 14             | ✅ Yes     |
-| `antigua_and_barbuda`              | Antigua_and_barbuda              | JPP  | 8              | ✅ Yes     |
-| `argentina`                        | Argentina                        | JPP  | 24             | ✅ Yes     |
-| `armenia`                          | Armenia                          | JPP  | 11             | ✅ Yes     |
-| `aruba`                            | Aruba                            | JPP  | 1              | ✅ Yes     |
-| `australia`                        | Australia                        | JPP  | 8              | ✅ Yes     |
-| `austria`                          | Austria                          | JPP  | 9              | ✅ Yes     |
-| `azerbaijan`                       | Azerbaijan                       | JPP  | 77             | ✅ Yes     |
-| `bahamas`                          | Bahamas                          | JPP  | 32             | ✅ Yes     |
-| `bahrain`                          | Bahrain                          | JPP  | 4              | ✅ Yes     |
-| `bangladesh`                       | Bangladesh                       | JPP  | 8              | ✅ Yes     |
-| `barbados`                         | Barbados                         | JPP  | 11             | ✅ Yes     |
-| `belarus`                          | Belarus                          | JPP  | 7              | ✅ Yes     |
-| `belgium`                          | Belgium                          | JPP  | 3              | ✅ Yes     |
-| `belize`                           | Belize                           | JPP  | 6              | ✅ Yes     |
-| `benin`                            | Benin                            | JPP  | 12             | ✅ Yes     |
-| `bermuda`                          | Bermuda                          | JPP  | 11             | ✅ Yes     |
-| `bhutan`                           | Bhutan                           | JPP  | 20             | ✅ Yes     |
-| `bolivia`                          | Bolivia                          | JPP  | 9              | ✅ Yes     |
-| `bosnia_and_herzegovina`           | Bosnia and herzegovina           | JPP  | 3              | ✅ Yes     |
-| `botswana`                         | Botswana                         | JPP  | 16             | ✅ Yes     |
-| `brazil`                           | Brazil                           | JPP  | 27             | ✅ Yes     |
-| `british_virgin_islands`           | British virgin islands           | JPP  | 1              | ✅ Yes     |
-| `brunei`                           | Brunei                           | JPP  | 4              | ✅ Yes     |
-| `bulgaria`                         | Bulgaria                         | JPP  | 28             | ✅ Yes     |
-| `burkina_faso`                     | Burkina_faso                     | JPP  | 45             | ✅ Yes     |
-| `burundi`                          | Burundi                          | JPP  | 18             | ✅ Yes     |
-| `cambodia`                         | Cambodia                         | JPP  | 25             | ✅ Yes     |
-| `cameroon`                         | Cameroon                         | JPP  | 10             | ✅ Yes     |
-| `canada`                           | Canada                           | JPP  | 13             | ✅ Yes     |
-| `cape_verde`                       | Cape_verde                       | JPP  | 22             | ✅ Yes     |
-| `cayman_islands`                   | Cayman_islands                   | JPP  | 1              | ✅ Yes     |
-| `central_african_republic`         | Central african republic         | JPP  | 17             | ✅ Yes     |
-| `chad`                             | Chad                             | JPP  | 23             | ✅ Yes     |
-| `chile`                            | Chile                            | JPP  | 16             | ✅ Yes     |
-| `china`                            | China                            | JPP  | 34             | ✅ Yes     |
-| `colombia`                         | Colombia                         | JPP  | 33             | ✅ Yes     |
-| `comoros`                          | Comoros                          | JPP  | 3              | ✅ Yes     |
-| `costa_rica`                       | Costa_rica                       | JPP  | 7              | ✅ Yes     |
-| `cote_d_ivoire`                    | Côte_d                           | JPP  | 14             | ✅ Yes     |
-| `croatia`                          | Croatia                          | JPP  | 21             | ✅ Yes     |
-| `cuba`                             | Cuba                             | JPP  | 16             | ✅ Yes     |
-| `curaco`                           | Curaco                           | JPP  | 1              | ✅ Yes     |
-| `cyprus`                           | Cyprus                           | JPP  | 6              | ✅ Yes     |
-| `czech_republic`                   | Czech_republic                   | JPP  | 14             | ✅ Yes     |
-| `drc`                              | Democratic Republic of the Congo | JPP  | 26             | ✅ Yes     |
-| `denmark`                          | Denmark                          | JPP  | 5              | ✅ Yes     |
-| `djibouti`                         | Djibouti                         | JPP  | 6              | ✅ Yes     |
-| `dominica`                         | Dominica                         | JPP  | 10             | ✅ Yes     |
-| `dominican_republic`               | Dominican_republic               | JPP  | 10             | ✅ Yes     |
-| `ecuador`                          | Ecuador                          | JPP  | 24             | ✅ Yes     |
-| `egypt`                            | Egypt                            | JPP  | 27             | ✅ Yes     |
-| `el_salvador`                      | El_salvador                      | JPP  | 14             | ✅ Yes     |
-| `equatorial_guinea`                | Equatorial_guinea                | JPP  | 7              | ✅ Yes     |
-| `eritrea`                          | Eritrea                          | JPP  | 6              | ✅ Yes     |
-| `estonia`                          | Estonia                          | JPP  | 79             | ✅ Yes     |
-| `ethiopia`                         | Ethiopia                         | JPP  | 12             | ✅ Yes     |
-| `europe`                           | Europe                           | JPP  | 45             | ❌ No      |
-| `faeroe_islands`                   | Faeroe_islands                   | JPP  | 1              | ✅ Yes     |
-| `falkland_islands`                 | Falkland_islands                 | JPP  | 1              | ✅ Yes     |
-| `fiji`                             | Fiji                             | JPP  | 5              | ✅ Yes     |
-| `finland`                          | Finland                          | JPP  | 19             | ✅ Yes     |
-| `france`                           | France                           | JPP  | 13             | ✅ Yes     |
-| `french_polynesia`                 | French_polynesia                 | JPP  | 5              | ✅ Yes     |
-| `gabon`                            | Gabon                            | JPP  | 9              | ✅ Yes     |
-| `georgia`                          | Georgia                          | JPP  | 12             | ✅ Yes     |
-| `germany`                          | Germany                          | JPP  | 16             | ✅ Yes     |
-| `ghana`                            | Ghana                            | JPP  | 16             | ✅ Yes     |
-| `gb`                               | Great British                    | JPP  | 232            | ✅ Yes     |
-| `greece`                           | Greece                           | JPP  | 14             | ✅ Yes     |
-| `greenland`                        | Greenland                        | JPP  | 5              | ✅ Yes     |
-| `grenada`                          | Grenada                          | JPP  | 7              | ✅ Yes     |
-| `guatemala`                        | Guatemala                        | JPP  | 22             | ✅ Yes     |
-| `guinea`                           | Guinea                           | JPP  | 34             | ✅ Yes     |
-| `guinea_bissau`                    | Guinea-bissau                    | JPP  | 9              | ✅ Yes     |
-| `guyana`                           | Guyana                           | JPP  | 10             | ✅ Yes     |
-| `haiti`                            | Haiti                            | JPP  | 10             | ✅ Yes     |
-| `honduras`                         | Honduras                         | JPP  | 18             | ✅ Yes     |
-| `hong_kong`                        | Hong_kong                        | JPP  | 18             | ✅ Yes     |
-| `hungary`                          | Hungary                          | JPP  | 43             | ✅ Yes     |
-| `iceland`                          | Iceland                          | JPP  | 8              | ✅ Yes     |
-| `india`                            | India                            | JPP  | 36             | ✅ Yes     |
-| `indonesia`                        | Indonesia                        | JPP  | 34             | ✅ Yes     |
-| `iran`                             | Iran                             | JPP  | 31             | ❌ No      |
-| `iraq`                             | Iraq                             | JPP  | 5              | ✅ Yes     |
-| `ireland`                          | Ireland                          | JPP  | 26             | ✅ Yes     |
-| `israel`                           | Israel                           | JPP  | 6              | ✅ Yes     |
-| `italy`                            | Italy                            | JPP  | 20             | ✅ Yes     |
-| `jamaica`                          | Jamaica                          | JPP  | 14             | ✅ Yes     |
-| `japan`                            | Japan                            | JPP  | 47             | ✅ Yes     |
-| `jordan`                           | Jordan                           | JPP  | 12             | ✅ Yes     |
-| `kazakhstan`                       | Kazakhstan                       | JPP  | 20             | ✅ Yes     |
-| `kenya`                            | Kenya                            | JPP  | 47             | ✅ Yes     |
-| `kuwait`                           | Kuwait                           | JPP  | 6              | ✅ Yes     |
-| `kyrgyzstan`                       | Kyrgyzstan                       | JPP  | 9              | ✅ Yes     |
-| `laos`                             | Laos                             | JPP  | 18             | ✅ Yes     |
-| `latvia`                           | Latvia                           | JPP  | 42             | ✅ Yes     |
-| `lebanon`                          | Lebanon                          | JPP  | 8              | ✅ Yes     |
-| `lesotho`                          | Lesotho                          | JPP  | 10             | ✅ Yes     |
-| `liberia`                          | Liberia                          | JPP  | 15             | ✅ Yes     |
-| `libya`                            | Libya                            | JPP  | 22             | ✅ Yes     |
-| `liechtenstein`                    | Liechtenstein                    | JPP  | 11             | ✅ Yes     |
-| `lithuania`                        | Lithuania                        | JPP  | 60             | ✅ Yes     |
-| `luxembourg`                       | Luxembourg                       | JPP  | 12             | ✅ Yes     |
-| `macedonia`                        | Macedonia                        | JPP  | 80             | ✅ Yes     |
-| `madagascar`                       | Madagascar                       | JPP  | 6              | ✅ Yes     |
-| `malawi`                           | Malawi                           | JPP  | 28             | ✅ Yes     |
-| `malaysia`                         | Malaysia                         | JPP  | 16             | ✅ Yes     |
-| `maldives`                         | Maldives                         | JPP  | 21             | ✅ Yes     |
-| `mali`                             | Mali                             | JPP  | 10             | ✅ Yes     |
-| `malta`                            | Malta                            | JPP  | 68             | ✅ Yes     |
-| `mauritania`                       | Mauritania                       | JPP  | 15             | ✅ Yes     |
-| `mauritius`                        | Mauritius                        | JPP  | 12             | ✅ Yes     |
-| `mexico`                           | Mexico                           | JPP  | 32             | ✅ Yes     |
-| `moldova`                          | Moldova                          | JPP  | 37             | ✅ Yes     |
-| `monaco`                           | Monaco                           | JPP  | 1              | ✅ Yes     |
-| `mongolia`                         | Mongolia                         | JPP  | 22             | ✅ Yes     |
-| `montenegro`                       | Montenegro                       | JPP  | 24             | ✅ Yes     |
-| `montserrat`                       | Montserrat                       | JPP  | 3              | ✅ Yes     |
-| `morocco`                          | Morocco                          | JPP  | 12             | ✅ Yes     |
-| `mozambique`                       | Mozambique                       | JPP  | 11             | ✅ Yes     |
-| `myanmar`                          | Myanmar                          | JPP  | 14             | ✅ Yes     |
-| `namibia`                          | Namibia                          | JPP  | 14             | ✅ Yes     |
-| `nauru`                            | Nauru                            | JPP  | 14             | ✅ Yes     |
-| `nepal`                            | Nepal                            | JPP  | 14             | ✅ Yes     |
-| `netherlands`                      | Netherlands                      | JPP  | 12             | ✅ Yes     |
-| `new_caledonia`                    | New_caledonia                    | JPP  | 3              | ✅ Yes     |
-| `new_zealand`                      | New_zealand                      | JPP  | 16             | ✅ Yes     |
-| `nicaragua`                        | Nicaragua                        | JPP  | 17             | ✅ Yes     |
-| `niger`                            | Niger                            | JPP  | 8              | ✅ Yes     |
-| `nigeria`                          | Nigeria                          | JPP  | 37             | ✅ Yes     |
-| `north_korea`                      | North_korea                      | JPP  | 12             | ✅ Yes     |
-| `norway`                           | Norway                           | JPP  | 11             | ✅ Yes     |
-| `oman`                             | Oman                             | JPP  | 11             | ✅ Yes     |
-| `pakistan`                         | Pakistan                         | JPP  | 7              | ✅ Yes     |
-| `palestine`                        | Palestine                        | JPP  | 2              | ✅ Yes     |
-| `panama`                           | Panama                           | JPP  | 14             | ✅ Yes     |
-| `papua_new_guinea`                 | Papua_new_guinea                 | JPP  | 22             | ✅ Yes     |
-| `paraguay`                         | Paraguay                         | JPP  | 18             | ✅ Yes     |
-| `peru`                             | Peru                             | JPP  | 26             | ✅ Yes     |
-| `philippines`                      | Philippines                      | JPP  | 17             | ✅ Yes     |
-| `pitcairn_islands`                 | Pitcairn_islands                 | JPP  | 1              | ✅ Yes     |
-| `poland`                           | Poland                           | JPP  | 16             | ✅ Yes     |
-| `portugal`                         | Portugal                         | JPP  | 20             | ✅ Yes     |
-| `puerto_rico`                      | Puerto_rico                      | JPP  | 1              | ✅ Yes     |
-| `qatar`                            | Qatar                            | JPP  | 8              | ✅ Yes     |
-| `republic_of_congo`                | Republic_of_congo                | JPP  | 12             | ✅ Yes     |
-| `romania`                          | Romania                          | JPP  | 42             | ✅ Yes     |
-| `russia`                           | Russia                           | JPP  | 83             | ❌ No      |
-| `rwanda`                           | Rwanda                           | JPP  | 5              | ✅ Yes     |
-| `saint_kitts_and_nevis`            | Saint_kitts_and_nevis            | JPP  | 14             | ✅ Yes     |
-| `saint_lucia`                      | Saint_lucia                      | JPP  | 11             | ✅ Yes     |
-| `saint_martin_dutch`               | saint_martin_dutch               | JPP  | 1              | ✅ Yes     |
-| `saint_martin_french`              | Saint_martin_french              | JPP  | 1              | ✅ Yes     |
-| `saint_vincent_and_the_grenadines` | Saint_vincent_and_the_grenadines | JPP  | 6              | ✅ Yes     |
-| `sao_tome_and_principe`            | São_tomé_and_principe            | JPP  | 7              | ✅ Yes     |
-| `saudi_arabia`                     | Saudi_arabia                     | JPP  | 13             | ✅ Yes     |
-| `senegal`                          | Senegal                          | JPP  | 14             | ✅ Yes     |
-| `serbia`                           | Serbia                           | JPP  | 25             | ✅ Yes     |
-| `seychelles`                       | Seychelles                       | JPP  | 27             | ✅ Yes     |
-| `sierra_leone`                     | Sierra_leone                     | JPP  | 5              | ✅ Yes     |
-| `singapore`                        | Singapore                        | JPP  | 5              | ✅ Yes     |
-| `slovakia`                         | Slovakia                         | JPP  | 8              | ✅ Yes     |
-| `slovenia`                         | Slovenia                         | JPP  | 212            | ✅ Yes     |
-| `solomon_islands`                  | Solomon_islands                  | JPP  | 10             | ✅ Yes     |
-| `somalia`                          | Somalia                          | JPP  | 20             | ✅ Yes     |
-| `south_africa`                     | South_africa                     | JPP  | 9              | ✅ Yes     |
-| `south_korea`                      | South_korea                      | JPP  | 17             | ✅ Yes     |
-| `south_sudan`                      | South_sudan                      | JPP  | 10             | ✅ Yes     |
-| `spain`                            | Spain                            | JPP  | 19             | ✅ Yes     |
-| `sri_lanka`                        | Sri_lanka                        | JPP  | 25             | ✅ Yes     |
-| `sudan`                            | Sudan                            | JPP  | 18             | ✅ Yes     |
-| `suriname`                         | Suriname                         | JPP  | 10             | ✅ Yes     |
-| `swaziland`                        | Swaziland                        | JPP  | 4              | ✅ Yes     |
-| `sweden`                           | SWEDEN                           | JPP  | 21             | ✅ Yes     |
-| `switzerland`                      | Switzerland                      | JPP  | 26             | ✅ Yes     |
-| `syria`                            | Syria                            | JPP  | 14             | ✅ Yes     |
-| `taiwan`                           | Taiwan                           | JPP  | 22             | ✅ Yes     |
-| `tajikistan`                       | Tajikistan                       | JPP  | 5              | ✅ Yes     |
-| `tanzania`                         | Tanzania                         | JPP  | 31             | ✅ Yes     |
-| `thailand`                         | Thailand                         | JPP  | 78             | ✅ Yes     |
-| `the_gambia`                       | The_gambia                       | JPP  | 6              | ✅ Yes     |
-| `timor-leste`                      | Timor-leste                      | JPP  | 13             | ✅ Yes     |
-| `togo`                             | Togo                             | JPP  | 5              | ✅ Yes     |
-| `tonga`                            | Tonga                            | JPP  | 5              | ✅ Yes     |
-| `trinidad_and_tobago`              | Trinidad_and_tobago              | JPP  | 15             | ✅ Yes     |
-| `tunisia`                          | Tunisia                          | JPP  | 24             | ✅ Yes     |
-| `turkey`                           | Turkey                           | JPP  | 81             | ✅ Yes     |
-| `turkmenistan`                     | Turkmenistan                     | JPP  | 6              | ✅ Yes     |
-| `turks_and_caicos_islands`         | Turks_and_caicos_islands         | JPP  | 6              | ✅ Yes     |
-| `uae`                              | Uae                              | JPP  | 7              | ✅ Yes     |
-| `uganda`                           | Uganda                           | JPP  | 135            | ✅ Yes     |
-| `ukraine`                          | Ukraine                          | JPP  | 27             | ✅ Yes     |
-| `usa`                              | United States America            | JPP  | 51             | ❌ No      |
-| `united_states_virgin_islands`     | United_states_virgin_islands     | JPP  | 3              | ✅ Yes     |
-| `uruguay`                          | Uruguay                          | JPP  | 19             | ✅ Yes     |
-| `uzbekistan`                       | Uzbekistan                       | JPP  | 14             | ✅ Yes     |
-| `vanuatu`                          | Vanuatu                          | JPP  | 6              | ✅ Yes     |
-| `vatican`                          | Vatican                          | JPP  | 1              | ✅ Yes     |
-| `venezuela`                        | Venezuela                        | JPP  | 25             | ✅ Yes     |
-| `vietnam`                          | Vietnam                          | JPP  | 63             | ✅ Yes     |
-| `western_sahara`                   | Western_sahara                   | JPP  | 1              | ✅ Yes     |
-| `yemen`                            | Yemen                            | JPP  | 22             | ✅ Yes     |
-| `zambia`                           | Zambia                           | JPP  | 10             | ✅ Yes     |
-| `zimbabwe`                         | Zimbabwe                         | JPP  | 10             | ✅ Yes     |
+| Command | Country Name | Code | Regions/States | Has Labels | Has Capitals |
+|---------|--------------|------|----------------|------------|--------------|
+| `afghanistan` | Afghanistan | JPP | 34 | ✅ Yes | ✅ Yes |
+| `africa` | Africa | JPP | 50 | ❌ No | ❌ No |
+| `albania` | Albania | JPP | 12 | ✅ Yes | ❌ No |
+| `algeria` | Algeria | JPP | 58 | ✅ Yes | ❌ No |
+| `andorra` | Andorra | JPP | 7 | ✅ Yes | ❌ No |
+| `angola` | Angola | JPP | 18 | ✅ Yes | ❌ No |
+| `anguilla` | Anguilla | JPP | 14 | ✅ Yes | ❌ No |
+| `antigua_and_barbuda` | Antigua_and_barbuda | JPP | 8 | ✅ Yes | ❌ No |
+| `argentina` | Argentina | JPP | 24 | ✅ Yes | ❌ No |
+| `armenia` | Armenia | JPP | 11 | ✅ Yes | ❌ No |
+| `aruba` | Aruba | JPP | 1 | ✅ Yes | ❌ No |
+| `australia` | Australia | JPP | 8 | ✅ Yes | ❌ No |
+| `austria` | Austria | JPP | 9 | ✅ Yes | ❌ No |
+| `azerbaijan` | Azerbaijan | JPP | 77 | ✅ Yes | ❌ No |
+| `bahamas` | Bahamas | JPP | 32 | ✅ Yes | ❌ No |
+| `bahrain` | Bahrain | JPP | 4 | ✅ Yes | ❌ No |
+| `bangladesh` | Bangladesh | JPP | 8 | ✅ Yes | ❌ No |
+| `barbados` | Barbados | JPP | 11 | ✅ Yes | ❌ No |
+| `belarus` | Belarus | JPP | 7 | ✅ Yes | ❌ No |
+| `belgium` | Belgium | JPP | 3 | ✅ Yes | ❌ No |
+| `belize` | Belize | JPP | 6 | ✅ Yes | ❌ No |
+| `benin` | Benin | JPP | 12 | ✅ Yes | ❌ No |
+| `bermuda` | Bermuda | JPP | 11 | ✅ Yes | ❌ No |
+| `bhutan` | Bhutan | JPP | 20 | ✅ Yes | ❌ No |
+| `bolivia` | Bolivia | JPP | 9 | ✅ Yes | ❌ No |
+| `bosnia_and_herzegovina` | Bosnia and herzegovina | JPP | 3 | ✅ Yes | ❌ No |
+| `botswana` | Botswana | JPP | 16 | ✅ Yes | ❌ No |
+| `brazil` | Brazil | JPP | 27 | ✅ Yes | ❌ No |
+| `british_virgin_islands` | British virgin islands | JPP | 1 | ✅ Yes | ❌ No |
+| `brunei` | Brunei | JPP | 4 | ✅ Yes | ❌ No |
+| `bulgaria` | Bulgaria | JPP | 28 | ✅ Yes | ❌ No |
+| `burkina_faso` | Burkina_faso | JPP | 45 | ✅ Yes | ❌ No |
+| `burundi` | Burundi | JPP | 18 | ✅ Yes | ❌ No |
+| `cambodia` | Cambodia | JPP | 25 | ✅ Yes | ❌ No |
+| `cameroon` | Cameroon | JPP | 10 | ✅ Yes | ❌ No |
+| `canada` | Canada | JPP | 13 | ✅ Yes | ❌ No |
+| `cape_verde` | Cape_verde | JPP | 22 | ✅ Yes | ❌ No |
+| `cayman_islands` | Cayman_islands | JPP | 1 | ✅ Yes | ❌ No |
+| `central_african_republic` | Central african republic | JPP | 17 | ✅ Yes | ❌ No |
+| `chad` | Chad | JPP | 23 | ✅ Yes | ❌ No |
+| `chile` | Chile | JPP | 16 | ✅ Yes | ❌ No |
+| `china` | China | JPP | 34 | ✅ Yes | ❌ No |
+| `colombia` | Colombia | JPP | 33 | ✅ Yes | ❌ No |
+| `comoros` | Comoros | JPP | 3 | ✅ Yes | ❌ No |
+| `costa_rica` | Costa_rica | JPP | 7 | ✅ Yes | ❌ No |
+| `cote_d_ivoire` | Côte_d | JPP | 14 | ✅ Yes | ❌ No |
+| `croatia` | Croatia | JPP | 21 | ✅ Yes | ❌ No |
+| `cuba` | Cuba | JPP | 16 | ✅ Yes | ❌ No |
+| `curaco` | Curaco | JPP | 1 | ✅ Yes | ❌ No |
+| `cyprus` | Cyprus | JPP | 6 | ✅ Yes | ❌ No |
+| `czech_republic` | Czech_republic | JPP | 14 | ✅ Yes | ❌ No |
+| `drc` | Democratic Republic of the Congo | JPP | 26 | ✅ Yes | ❌ No |
+| `denmark` | Denmark | JPP | 5 | ✅ Yes | ❌ No |
+| `djibouti` | Djibouti | JPP | 6 | ✅ Yes | ❌ No |
+| `dominica` | Dominica | JPP | 10 | ✅ Yes | ❌ No |
+| `dominican_republic` | Dominican_republic | JPP | 10 | ✅ Yes | ❌ No |
+| `ecuador` | Ecuador | JPP | 24 | ✅ Yes | ❌ No |
+| `egypt` | Egypt | JPP | 27 | ✅ Yes | ❌ No |
+| `el_salvador` | El_salvador | JPP | 14 | ✅ Yes | ❌ No |
+| `equatorial_guinea` | Equatorial_guinea | JPP | 7 | ✅ Yes | ❌ No |
+| `eritrea` | Eritrea | JPP | 6 | ✅ Yes | ❌ No |
+| `estonia` | Estonia | JPP | 79 | ✅ Yes | ❌ No |
+| `ethiopia` | Ethiopia | JPP | 12 | ✅ Yes | ❌ No |
+| `europe` | Europe | JPP | 45 | ❌ No | ❌ No |
+| `faeroe_islands` | Faeroe_islands | JPP | 1 | ✅ Yes | ❌ No |
+| `falkland_islands` | Falkland_islands | JPP | 1 | ✅ Yes | ❌ No |
+| `fiji` | Fiji | JPP | 5 | ✅ Yes | ❌ No |
+| `finland` | Finland | JPP | 19 | ✅ Yes | ❌ No |
+| `france` | France | JPP | 13 | ✅ Yes | ❌ No |
+| `french_polynesia` | French_polynesia | JPP | 5 | ✅ Yes | ❌ No |
+| `gabon` | Gabon | JPP | 9 | ✅ Yes | ❌ No |
+| `georgia` | Georgia | JPP | 12 | ✅ Yes | ❌ No |
+| `germany` | Germany | JPP | 16 | ✅ Yes | ✅ Yes |
+| `ghana` | Ghana | JPP | 16 | ✅ Yes | ❌ No |
+| `gb` | Great British | JPP | 232 | ✅ Yes | ❌ No |
+| `greece` | Greece | JPP | 14 | ✅ Yes | ❌ No |
+| `greenland` | Greenland | JPP | 5 | ✅ Yes | ❌ No |
+| `grenada` | Grenada | JPP | 7 | ✅ Yes | ❌ No |
+| `guatemala` | Guatemala | JPP | 22 | ✅ Yes | ❌ No |
+| `guinea` | Guinea | JPP | 34 | ✅ Yes | ❌ No |
+| `guinea_bissau` | Guinea-bissau | JPP | 9 | ✅ Yes | ❌ No |
+| `guyana` | Guyana | JPP | 10 | ✅ Yes | ❌ No |
+| `haiti` | Haiti | JPP | 10 | ✅ Yes | ❌ No |
+| `honduras` | Honduras | JPP | 18 | ✅ Yes | ❌ No |
+| `hong_kong` | Hong_kong | JPP | 18 | ✅ Yes | ❌ No |
+| `hungary` | Hungary | JPP | 43 | ✅ Yes | ❌ No |
+| `iceland` | Iceland | JPP | 8 | ✅ Yes | ❌ No |
+| `india` | India | JPP | 36 | ✅ Yes | ❌ No |
+| `indonesia` | Indonesia | JPP | 34 | ✅ Yes | ❌ No |
+| `iran` | Iran | JPP | 31 | ❌ No | ❌ No |
+| `iraq` | Iraq | JPP | 5 | ✅ Yes | ❌ No |
+| `ireland` | Ireland | JPP | 26 | ✅ Yes | ❌ No |
+| `israel` | Israel | JPP | 6 | ✅ Yes | ❌ No |
+| `italy` | Italy | JPP | 20 | ✅ Yes | ❌ No |
+| `jamaica` | Jamaica | JPP | 14 | ✅ Yes | ❌ No |
+| `japan` | Japan | JPP | 47 | ✅ Yes | ✅ Yes |
+| `jordan` | Jordan | JPP | 12 | ✅ Yes | ❌ No |
+| `kazakhstan` | Kazakhstan | JPP | 20 | ✅ Yes | ❌ No |
+| `kenya` | Kenya | JPP | 47 | ✅ Yes | ❌ No |
+| `kuwait` | Kuwait | JPP | 6 | ✅ Yes | ❌ No |
+| `kyrgyzstan` | Kyrgyzstan | JPP | 9 | ✅ Yes | ❌ No |
+| `laos` | Laos | JPP | 18 | ✅ Yes | ❌ No |
+| `latvia` | Latvia | JPP | 42 | ✅ Yes | ❌ No |
+| `lebanon` | Lebanon | JPP | 8 | ✅ Yes | ❌ No |
+| `lesotho` | Lesotho | JPP | 10 | ✅ Yes | ❌ No |
+| `liberia` | Liberia | JPP | 15 | ✅ Yes | ❌ No |
+| `libya` | Libya | JPP | 22 | ✅ Yes | ❌ No |
+| `liechtenstein` | Liechtenstein | JPP | 11 | ✅ Yes | ❌ No |
+| `lithuania` | Lithuania | JPP | 60 | ✅ Yes | ❌ No |
+| `luxembourg` | Luxembourg | JPP | 12 | ✅ Yes | ❌ No |
+| `macedonia` | Macedonia | JPP | 80 | ✅ Yes | ❌ No |
+| `madagascar` | Madagascar | JPP | 6 | ✅ Yes | ❌ No |
+| `malawi` | Malawi | JPP | 28 | ✅ Yes | ❌ No |
+| `malaysia` | Malaysia | JPP | 16 | ✅ Yes | ❌ No |
+| `maldives` | Maldives | JPP | 21 | ✅ Yes | ❌ No |
+| `mali` | Mali | JPP | 10 | ✅ Yes | ❌ No |
+| `malta` | Malta | JPP | 68 | ✅ Yes | ❌ No |
+| `mauritania` | Mauritania | JPP | 15 | ✅ Yes | ❌ No |
+| `mauritius` | Mauritius | JPP | 12 | ✅ Yes | ❌ No |
+| `mexico` | Mexico | JPP | 32 | ✅ Yes | ❌ No |
+| `moldova` | Moldova | JPP | 37 | ✅ Yes | ❌ No |
+| `monaco` | Monaco | JPP | 1 | ✅ Yes | ❌ No |
+| `mongolia` | Mongolia | JPP | 22 | ✅ Yes | ❌ No |
+| `montenegro` | Montenegro | JPP | 24 | ✅ Yes | ❌ No |
+| `montserrat` | Montserrat | JPP | 3 | ✅ Yes | ❌ No |
+| `morocco` | Morocco | JPP | 12 | ✅ Yes | ❌ No |
+| `mozambique` | Mozambique | JPP | 11 | ✅ Yes | ❌ No |
+| `myanmar` | Myanmar | JPP | 14 | ✅ Yes | ❌ No |
+| `namibia` | Namibia | JPP | 14 | ✅ Yes | ❌ No |
+| `nauru` | Nauru | JPP | 14 | ✅ Yes | ❌ No |
+| `nepal` | Nepal | JPP | 14 | ✅ Yes | ❌ No |
+| `netherlands` | Netherlands | JPP | 12 | ✅ Yes | ❌ No |
+| `new_caledonia` | New_caledonia | JPP | 3 | ✅ Yes | ❌ No |
+| `new_zealand` | New_zealand | JPP | 16 | ✅ Yes | ❌ No |
+| `nicaragua` | Nicaragua | JPP | 17 | ✅ Yes | ❌ No |
+| `niger` | Niger | JPP | 8 | ✅ Yes | ❌ No |
+| `nigeria` | Nigeria | JPP | 37 | ✅ Yes | ❌ No |
+| `north_korea` | North_korea | JPP | 12 | ✅ Yes | ❌ No |
+| `norway` | Norway | JPP | 11 | ✅ Yes | ❌ No |
+| `oman` | Oman | JPP | 11 | ✅ Yes | ❌ No |
+| `pakistan` | Pakistan | JPP | 7 | ✅ Yes | ❌ No |
+| `palestine` | Palestine | JPP | 2 | ✅ Yes | ❌ No |
+| `panama` | Panama | JPP | 14 | ✅ Yes | ❌ No |
+| `papua_new_guinea` | Papua_new_guinea | JPP | 22 | ✅ Yes | ❌ No |
+| `paraguay` | Paraguay | JPP | 18 | ✅ Yes | ❌ No |
+| `peru` | Peru | JPP | 26 | ✅ Yes | ❌ No |
+| `philippines` | Philippines | JPP | 17 | ✅ Yes | ❌ No |
+| `pitcairn_islands` | Pitcairn_islands | JPP | 1 | ✅ Yes | ❌ No |
+| `poland` | Poland | JPP | 16 | ✅ Yes | ❌ No |
+| `portugal` | Portugal | JPP | 20 | ✅ Yes | ❌ No |
+| `puerto_rico` | Puerto_rico | JPP | 1 | ✅ Yes | ❌ No |
+| `qatar` | Qatar | JPP | 8 | ✅ Yes | ❌ No |
+| `republic_of_congo` | Republic_of_congo | JPP | 12 | ✅ Yes | ❌ No |
+| `romania` | Romania | JPP | 42 | ✅ Yes | ❌ No |
+| `russia` | Russia | JPP | 83 | ❌ No | ❌ No |
+| `rwanda` | Rwanda | JPP | 5 | ✅ Yes | ❌ No |
+| `saint_kitts_and_nevis` | Saint_kitts_and_nevis | JPP | 14 | ✅ Yes | ❌ No |
+| `saint_lucia` | Saint_lucia | JPP | 11 | ✅ Yes | ❌ No |
+| `saint_martin_dutch` | saint_martin_dutch | JPP | 1 | ✅ Yes | ❌ No |
+| `saint_martin_french` | Saint_martin_french | JPP | 1 | ✅ Yes | ❌ No |
+| `saint_vincent_and_the_grenadines` | Saint_vincent_and_the_grenadines | JPP | 6 | ✅ Yes | ❌ No |
+| `sao_tome_and_principe` | São_tomé_and_principe | JPP | 7 | ✅ Yes | ❌ No |
+| `saudi_arabia` | Saudi_arabia | JPP | 13 | ✅ Yes | ❌ No |
+| `senegal` | Senegal | JPP | 14 | ✅ Yes | ❌ No |
+| `serbia` | Serbia | JPP | 25 | ✅ Yes | ❌ No |
+| `seychelles` | Seychelles | JPP | 27 | ✅ Yes | ❌ No |
+| `sierra_leone` | Sierra_leone | JPP | 5 | ✅ Yes | ❌ No |
+| `singapore` | Singapore | JPP | 5 | ✅ Yes | ❌ No |
+| `slovakia` | Slovakia | JPP | 8 | ✅ Yes | ❌ No |
+| `slovenia` | Slovenia | JPP | 212 | ✅ Yes | ❌ No |
+| `solomon_islands` | Solomon_islands | JPP | 10 | ✅ Yes | ❌ No |
+| `somalia` | Somalia | JPP | 20 | ✅ Yes | ❌ No |
+| `south_africa` | South_africa | JPP | 9 | ✅ Yes | ✅ Yes |
+| `south_korea` | South_korea | JPP | 17 | ✅ Yes | ✅ Yes |
+| `south_sudan` | South_sudan | JPP | 10 | ✅ Yes | ❌ No |
+| `spain` | Spain | JPP | 19 | ✅ Yes | ❌ No |
+| `sri_lanka` | Sri_lanka | JPP | 25 | ✅ Yes | ❌ No |
+| `sudan` | Sudan | JPP | 18 | ✅ Yes | ❌ No |
+| `suriname` | Suriname | JPP | 10 | ✅ Yes | ❌ No |
+| `swaziland` | Swaziland | JPP | 4 | ✅ Yes | ❌ No |
+| `sweden` | SWEDEN | JPP | 21 | ✅ Yes | ❌ No |
+| `switzerland` | Switzerland | JPP | 26 | ✅ Yes | ❌ No |
+| `syria` | Syria | JPP | 14 | ✅ Yes | ❌ No |
+| `taiwan` | Taiwan | JPP | 22 | ✅ Yes | ❌ No |
+| `tajikistan` | Tajikistan | JPP | 5 | ✅ Yes | ❌ No |
+| `tanzania` | Tanzania | JPP | 31 | ✅ Yes | ❌ No |
+| `thailand` | Thailand | JPP | 78 | ✅ Yes | ❌ No |
+| `the_gambia` | The_gambia | JPP | 6 | ✅ Yes | ❌ No |
+| `timor-leste` | Timor-leste | JPP | 13 | ✅ Yes | ❌ No |
+| `togo` | Togo | JPP | 5 | ✅ Yes | ❌ No |
+| `tonga` | Tonga | JPP | 5 | ✅ Yes | ❌ No |
+| `trinidad_and_tobago` | Trinidad_and_tobago | JPP | 15 | ✅ Yes | ❌ No |
+| `tunisia` | Tunisia | JPP | 24 | ✅ Yes | ❌ No |
+| `turkey` | Turkey | JPP | 81 | ✅ Yes | ❌ No |
+| `turkmenistan` | Turkmenistan | JPP | 6 | ✅ Yes | ❌ No |
+| `turks_and_caicos_islands` | Turks_and_caicos_islands | JPP | 6 | ✅ Yes | ❌ No |
+| `uae` | Uae | JPP | 7 | ✅ Yes | ❌ No |
+| `uganda` | Uganda | JPP | 135 | ✅ Yes | ❌ No |
+| `ukraine` | Ukraine | JPP | 27 | ✅ Yes | ❌ No |
+| `usa` | United States America | JPP | 51 | ❌ No | ❌ No |
+| `united_states_virgin_islands` | United_states_virgin_islands | JPP | 3 | ✅ Yes | ❌ No |
+| `uruguay` | Uruguay | JPP | 19 | ✅ Yes | ❌ No |
+| `uzbekistan` | Uzbekistan | JPP | 14 | ✅ Yes | ❌ No |
+| `vanuatu` | Vanuatu | JPP | 6 | ✅ Yes | ❌ No |
+| `vatican` | Vatican | JPP | 1 | ✅ Yes | ❌ No |
+| `venezuela` | Venezuela | JPP | 25 | ✅ Yes | ❌ No |
+| `vietnam` | Vietnam | JPP | 63 | ✅ Yes | ❌ No |
+| `western_sahara` | Western_sahara | JPP | 1 | ✅ Yes | ❌ No |
+| `yemen` | Yemen | JPP | 22 | ✅ Yes | ✅ Yes |
+| `zambia` | Zambia | JPP | 10 | ✅ Yes | ❌ No |
+| `zimbabwe` | Zimbabwe | JPP | 10 | ✅ Yes | ❌ No |
 
 ## 📝 Notes on Label Support
 
 Some maps currently do not support the `showLabel` feature. This is due to a lack of available open-source coordinate data, or because we are still manually verifying label placements to ensure accuracy.
 
 **Maps pending label support:**
-
 - `africa` (Africa)
 - `europe` (Europe)
 - `iran` (Iran)
 - `russia` (Russia)
 - `usa` (United States America)
+
+## 💰 Notes on Capital Coverage
+
+The following maps do not yet have a `capitals` property defined. This means their capital city marker(s) cannot be rendered on the map.
+
+**Maps without defined capitals:**
+
+- `africa` (Africa)
+- `albania` (Albania)
+- `algeria` (Algeria)
+- `andorra` (Andorra)
+- `angola` (Angola)
+- `anguilla` (Anguilla)
+- `antigua_and_barbuda` (Antigua_and_barbuda)
+- `argentina` (Argentina)
+- `armenia` (Armenia)
+- `aruba` (Aruba)
+- `australia` (Australia)
+- `austria` (Austria)
+- `azerbaijan` (Azerbaijan)
+- `bahamas` (Bahamas)
+- `bahrain` (Bahrain)
+- `bangladesh` (Bangladesh)
+- `barbados` (Barbados)
+- `belarus` (Belarus)
+- `belgium` (Belgium)
+- `belize` (Belize)
+- `benin` (Benin)
+- `bermuda` (Bermuda)
+- `bhutan` (Bhutan)
+- `bolivia` (Bolivia)
+- `bosnia_and_herzegovina` (Bosnia and herzegovina)
+- `botswana` (Botswana)
+- `brazil` (Brazil)
+- `british_virgin_islands` (British virgin islands)
+- `brunei` (Brunei)
+- `bulgaria` (Bulgaria)
+- `burkina_faso` (Burkina_faso)
+- `burundi` (Burundi)
+- `cambodia` (Cambodia)
+- `cameroon` (Cameroon)
+- `canada` (Canada)
+- `cape_verde` (Cape_verde)
+- `cayman_islands` (Cayman_islands)
+- `central_african_republic` (Central african republic)
+- `chad` (Chad)
+- `chile` (Chile)
+- `china` (China)
+- `colombia` (Colombia)
+- `comoros` (Comoros)
+- `costa_rica` (Costa_rica)
+- `cote_d_ivoire` (Côte_d)
+- `croatia` (Croatia)
+- `cuba` (Cuba)
+- `curaco` (Curaco)
+- `cyprus` (Cyprus)
+- `czech_republic` (Czech_republic)
+- `drc` (Democratic Republic of the Congo)
+- `denmark` (Denmark)
+- `djibouti` (Djibouti)
+- `dominica` (Dominica)
+- `dominican_republic` (Dominican_republic)
+- `ecuador` (Ecuador)
+- `egypt` (Egypt)
+- `el_salvador` (El_salvador)
+- `equatorial_guinea` (Equatorial_guinea)
+- `eritrea` (Eritrea)
+- `estonia` (Estonia)
+- `ethiopia` (Ethiopia)
+- `europe` (Europe)
+- `faeroe_islands` (Faeroe_islands)
+- `falkland_islands` (Falkland_islands)
+- `fiji` (Fiji)
+- `finland` (Finland)
+- `france` (France)
+- `french_polynesia` (French_polynesia)
+- `gabon` (Gabon)
+- `georgia` (Georgia)
+- `ghana` (Ghana)
+- `gb` (Great British)
+- `greece` (Greece)
+- `greenland` (Greenland)
+- `grenada` (Grenada)
+- `guatemala` (Guatemala)
+- `guinea` (Guinea)
+- `guinea_bissau` (Guinea-bissau)
+- `guyana` (Guyana)
+- `haiti` (Haiti)
+- `honduras` (Honduras)
+- `hong_kong` (Hong_kong)
+- `hungary` (Hungary)
+- `iceland` (Iceland)
+- `india` (India)
+- `indonesia` (Indonesia)
+- `iran` (Iran)
+- `iraq` (Iraq)
+- `ireland` (Ireland)
+- `israel` (Israel)
+- `italy` (Italy)
+- `jamaica` (Jamaica)
+- `jordan` (Jordan)
+- `kazakhstan` (Kazakhstan)
+- `kenya` (Kenya)
+- `kuwait` (Kuwait)
+- `kyrgyzstan` (Kyrgyzstan)
+- `laos` (Laos)
+- `latvia` (Latvia)
+- `lebanon` (Lebanon)
+- `lesotho` (Lesotho)
+- `liberia` (Liberia)
+- `libya` (Libya)
+- `liechtenstein` (Liechtenstein)
+- `lithuania` (Lithuania)
+- `luxembourg` (Luxembourg)
+- `macedonia` (Macedonia)
+- `madagascar` (Madagascar)
+- `malawi` (Malawi)
+- `malaysia` (Malaysia)
+- `maldives` (Maldives)
+- `mali` (Mali)
+- `malta` (Malta)
+- `mauritania` (Mauritania)
+- `mauritius` (Mauritius)
+- `mexico` (Mexico)
+- `moldova` (Moldova)
+- `monaco` (Monaco)
+- `mongolia` (Mongolia)
+- `montenegro` (Montenegro)
+- `montserrat` (Montserrat)
+- `morocco` (Morocco)
+- `mozambique` (Mozambique)
+- `myanmar` (Myanmar)
+- `namibia` (Namibia)
+- `nauru` (Nauru)
+- `nepal` (Nepal)
+- `netherlands` (Netherlands)
+- `new_caledonia` (New_caledonia)
+- `new_zealand` (New_zealand)
+- `nicaragua` (Nicaragua)
+- `niger` (Niger)
+- `nigeria` (Nigeria)
+- `north_korea` (North_korea)
+- `norway` (Norway)
+- `oman` (Oman)
+- `pakistan` (Pakistan)
+- `palestine` (Palestine)
+- `panama` (Panama)
+- `papua_new_guinea` (Papua_new_guinea)
+- `paraguay` (Paraguay)
+- `peru` (Peru)
+- `philippines` (Philippines)
+- `pitcairn_islands` (Pitcairn_islands)
+- `poland` (Poland)
+- `portugal` (Portugal)
+- `puerto_rico` (Puerto_rico)
+- `qatar` (Qatar)
+- `republic_of_congo` (Republic_of_congo)
+- `romania` (Romania)
+- `russia` (Russia)
+- `rwanda` (Rwanda)
+- `saint_kitts_and_nevis` (Saint_kitts_and_nevis)
+- `saint_lucia` (Saint_lucia)
+- `saint_martin_dutch` (saint_martin_dutch)
+- `saint_martin_french` (Saint_martin_french)
+- `saint_vincent_and_the_grenadines` (Saint_vincent_and_the_grenadines)
+- `sao_tome_and_principe` (São_tomé_and_principe)
+- `saudi_arabia` (Saudi_arabia)
+- `senegal` (Senegal)
+- `serbia` (Serbia)
+- `seychelles` (Seychelles)
+- `sierra_leone` (Sierra_leone)
+- `singapore` (Singapore)
+- `slovakia` (Slovakia)
+- `slovenia` (Slovenia)
+- `solomon_islands` (Solomon_islands)
+- `somalia` (Somalia)
+- `south_sudan` (South_sudan)
+- `spain` (Spain)
+- `sri_lanka` (Sri_lanka)
+- `sudan` (Sudan)
+- `suriname` (Suriname)
+- `swaziland` (Swaziland)
+- `sweden` (SWEDEN)
+- `switzerland` (Switzerland)
+- `syria` (Syria)
+- `taiwan` (Taiwan)
+- `tajikistan` (Tajikistan)
+- `tanzania` (Tanzania)
+- `thailand` (Thailand)
+- `the_gambia` (The_gambia)
+- `timor-leste` (Timor-leste)
+- `togo` (Togo)
+- `tonga` (Tonga)
+- `trinidad_and_tobago` (Trinidad_and_tobago)
+- `tunisia` (Tunisia)
+- `turkey` (Turkey)
+- `turkmenistan` (Turkmenistan)
+- `turks_and_caicos_islands` (Turks_and_caicos_islands)
+- `uae` (Uae)
+- `uganda` (Uganda)
+- `ukraine` (Ukraine)
+- `usa` (United States America)
+- `united_states_virgin_islands` (United_states_virgin_islands)
+- `uruguay` (Uruguay)
+- `uzbekistan` (Uzbekistan)
+- `vanuatu` (Vanuatu)
+- `vatican` (Vatican)
+- `venezuela` (Venezuela)
+- `vietnam` (Vietnam)
+- `western_sahara` (Western_sahara)
+- `zambia` (Zambia)
+- `zimbabwe` (Zimbabwe)
+
+**Total without capitals:** 205 out of 211
