@@ -2,15 +2,19 @@
 /**
  * inject-capitals.js
  *
- * Reads capitals.json (next to this script), scans the maps folder,
- * matches each map by filename (or its `name:` field as a fallback),
- * then injects/updates a `capitals` property in the map object.
+ * Reads capitals.json, scans the maps folder, matches each map by filename
+ * (or its `name:` field as a fallback), then injects/updates a `capitals`
+ * property in the map object.
+ *
+ * The `capitals` value is written as an object { name, x, y } where x/y are
+ * pulled from the matching entry inside the map's `labels` array.
+ * If no matching label is found, it falls back to a plain string.
  *
  * Usage:
  *   node inject-capitals.js                     # dry run on ./maps
  *   node inject-capitals.js ./maps              # dry run on a folder
  *   node inject-capitals.js ./maps --write      # apply changes
- *   node inject-capitals.js ./maps capitals.json --write
+ *   node inject-capitals.js ./maps scripts/capitals.json --write
  */
 
 'use strict';
@@ -78,6 +82,76 @@ function stripExt(name) {
   return name.replace(/\.tsx?$/i, '');
 }
 
+/**
+ * Extract every label object from the map source.
+ * Returns [{ name, x, y, code }]
+ */
+function extractLabels(code) {
+  const labelsKeyIdx = code.search(/\blabels\s*:\s*\[/);
+  if (labelsKeyIdx === -1) return [];
+
+  const open = code.indexOf('[', labelsKeyIdx);
+  if (open === -1) return [];
+
+  // Bracket-match to find the end of the labels array
+  let depth = 0;
+  let close = -1;
+  for (let i = open; i < code.length; i++) {
+    const c = code[i];
+    if (c === '[') depth++;
+    else if (c === ']') {
+      depth--;
+      if (depth === 0) {
+        close = i;
+        break;
+      }
+    }
+  }
+  if (close === -1) return [];
+
+  const body = code.slice(open + 1, close);
+
+  const labels = [];
+  const objRe = /\{([^{}]*)\}/g;
+  let m;
+  while ((m = objRe.exec(body)) !== null) {
+    const obj = m[1];
+    const nameM = obj.match(/\bname\s*:\s*["'`]([^"'`]*)["'`]/);
+    const xM = obj.match(/\bx\s*:\s*["'`]([^"'`]*)["'`]/);
+    const yM = obj.match(/\by\s*:\s*["'`]([^"'`]*)["'`]/);
+    const codeM = obj.match(/\bcode\s*:\s*["'`]([^"'`]*)["'`]/);
+    if (nameM && xM && yM) {
+      labels.push({
+        name: nameM[1],
+        x: xM[1],
+        y: yM[1],
+        code: codeM ? codeM[1] : null,
+      });
+    }
+  }
+  return labels;
+}
+
+/**
+ * Find a label whose name matches the capital (case-insensitive).
+ * Returns the label or null.
+ */
+function findCapitalLabel(labels, capitalName) {
+  if (!capitalName) return null;
+  const target = String(capitalName).trim().toLowerCase();
+
+  // Exact match first
+  let hit = labels.find((l) => l.name.trim().toLowerCase() === target);
+  if (hit) return hit;
+
+  // Then "contains" match (e.g. "Sana'a" vs "Sana'a City")
+  hit = labels.find((l) => {
+    const n = l.name.trim().toLowerCase();
+    return n.includes(target) || target.includes(n);
+  });
+  return hit || null;
+}
+
 // ──────────────────────────── Main ─────────────────────────────
 
 if (!fs.existsSync(MAPS_DIR)) {
@@ -99,16 +173,19 @@ if (files.length === 0) {
 }
 
 // Regexes (anchored per-line, multiline)
-const RE_EXISTING_CAPITALS = /^([ \t]*)capitals\s*:\s*["'`][^"'`]*["'`]\s*,?[ \t]*$/m;
-const RE_CODE               = /^([ \t]*)code\s*:\s*["'`][^"'`]*["'`]\s*,?[ \t]*$/m;
-const RE_NAME               = /^([ \t]*)name\s*:\s*["'`][^"'`]*["'`]\s*,?[ \t]*$/m;
-const RE_STATES             = /^([ \t]*)states\s*:/m;
-const RE_NAME_VALUE         = /\bname\s*:\s*["'`]([^"'`]+)["'`]/;
+const RE_EXISTING_CAPITALS =
+  /^([ \t]*)capitals\s*:\s*(?:\{[^{}]*\}|["'`][^"'`]*["'`])\s*,?[ \t]*$/m;
+const RE_CODE = /^([ \t]*)code\s*:\s*["'`][^"'`]*["'`]\s*,?[ \t]*$/m;
+const RE_NAME = /^([ \t]*)name\s*:\s*["'`][^"'`]*["'`]\s*,?[ \t]*$/m;
+const RE_STATES = /^([ \t]*)states\s*:/m;
+const RE_NAME_VALUE = /\bname\s*:\s*["'`]([^"'`]+)["'`]/;
 
 let matched = 0;
 let injected = 0;
 let updated = 0;
 let skipped = 0;
+let withCoords = 0;
+let withoutCoords = 0;
 const usedCapitals = new Set();
 
 for (const file of files) {
@@ -117,31 +194,51 @@ for (const file of files) {
   const code = fs.readFileSync(file, 'utf8');
 
   // 1) Try match by filename
-  let capitals = capitalsLookup.get(base.toLowerCase());
+  let capitalName = capitalsLookup.get(base.toLowerCase());
   let matchedBy = 'filename';
 
   // 2) Fallback: match by internal `name:` value
-  if (capitals === undefined) {
+  if (capitalName === undefined) {
     const m = code.match(RE_NAME_VALUE);
     if (m) {
       const byName = capitalsLookup.get(m[1].toLowerCase());
       if (byName !== undefined) {
-        capitals = byName;
+        capitalName = byName;
         matchedBy = 'name';
       }
     }
   }
 
-  if (capitals === undefined) {
+  if (capitalName === undefined) {
     console.log(`· ${rel}  → no capital match`);
     skipped++;
     continue;
   }
 
   matched++;
-  usedCapitals.add(String(capitals).toLowerCase());
+  usedCapitals.add(String(capitalName).toLowerCase());
 
-  const quoted = JSON.stringify(String(capitals));
+  // ── Look up x/y from the labels array ──────────────────────
+  const labels = extractLabels(code);
+  const label = findCapitalLabel(labels, capitalName);
+
+  let quoted;
+  if (label) {
+    withCoords++;
+    quoted = `{ name: ${JSON.stringify(capitalName)}, x: ${JSON.stringify(
+      label.x
+    )}, y: ${JSON.stringify(label.y)} }`;
+  } else {
+    withoutCoords++;
+    quoted = JSON.stringify(String(capitalName));
+    if (labels.length) {
+      console.log(
+        `   ⚠ ${rel}: label for "${capitalName}" not found among ${labels.length} label(s)`
+      );
+    } else {
+      console.log(`   ⚠ ${rel}: no labels array found`);
+    }
+  }
 
   // Case A: capitals already exists → replace value
   if (RE_EXISTING_CAPITALS.test(code)) {
@@ -181,7 +278,7 @@ for (const file of files) {
   }
 
   if (!newCode || newCode === code) {
-    console.log(`⚠ ${rel}  matched "${capitals}" but no safe insertion point`);
+    console.log(`⚠ ${rel}  matched "${capitalName}" but no safe insertion point`);
     skipped++;
     continue;
   }
@@ -197,6 +294,9 @@ console.log('');
 console.log('═'.repeat(60));
 console.log(
   `Matched: ${matched}  ·  Injected: ${injected}  ·  Updated: ${updated}  ·  Skipped: ${skipped}`
+);
+console.log(
+  `With coords (label found): ${withCoords}  ·  Without coords: ${withoutCoords}`
 );
 
 // Which entries in capitals.json were never used?
