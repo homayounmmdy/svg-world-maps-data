@@ -90,6 +90,11 @@
 const SOUTH_AFRICA = {
     name: "South_africa",
     code: "ZA",
+    capitals: [
+        { name: "Gauteng", x: "524.9", y: "179.4" },
+        { name: "Western Cape", x: "278.4", y: "430.9" },
+        { name: "Free State", x: "482.7", y: "258.1" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

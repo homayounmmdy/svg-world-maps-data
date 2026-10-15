@@ -1,10 +1,10 @@
 [
-    {
-        "filename" : "YEMEN",
-        "capitals" : "Sana'a City"
-    },
-    {
-        "filename" : "GERMANY",
-        "capitals" : "Berlin"
-    }
+  {
+    "filename": "SOUTH_AFRICA",
+    "capitals": ["Gauteng", "Western Cape", "Free State"]
+  },
+  {
+    "filename": "SOUTH_KOREA",
+    "capitals": "Seoul"
+  }
 ]

@@ -90,6 +90,9 @@
 const SOUTH_KOREA = {
     name: "South_korea",
     code: "KR",
+    capitals: [
+        { name: "Seoul", x: "397.4", y: "233" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {
