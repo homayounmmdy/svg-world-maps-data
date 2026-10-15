@@ -90,6 +90,7 @@
 const GERMANY = {
   name: "Germany",
   code: "DE",
+  capitals: "Berlin",
   viewBox: "0 0 1000 1000",
   states: [
     {

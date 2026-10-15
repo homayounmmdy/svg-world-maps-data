@@ -12,6 +12,6 @@
   },
   "scripts": {
     "generate-report": "node scripts/generate-report.js",
-    "add-capitals": "node scripts/add-capitals.js"
+    "inject-capitals": "node scripts/inject-capitals.js --write"
   }
 }

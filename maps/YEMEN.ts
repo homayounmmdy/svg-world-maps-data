@@ -90,6 +90,7 @@
 const YEMEN = {
     name: "Yemen",
     code: "YE",
+    capitals: "Sana'a City",
     viewBox: "0 0 1000 563",
     states: [
         {
