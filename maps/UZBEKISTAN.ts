@@ -90,6 +90,9 @@
 const UZBEKISTAN = {
     name: "Uzbekistan",
     code: "UZ",
+    capitals: [
+        { name: "Tashkent", x: "777", y: "347.8" }
+    ],
     viewBox: "0 0 1000 652",
     states: [
         {

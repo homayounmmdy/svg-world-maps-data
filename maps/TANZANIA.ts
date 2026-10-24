@@ -90,6 +90,9 @@
 const TANZANIA = {
     name: "Tanzania",
     code: "TZ",
+    capitals: [
+        { name: "Dodoma", x: "577", y: "480.9" }
+    ],
     viewBox: "0 0 1000 998",
     states: [
         {

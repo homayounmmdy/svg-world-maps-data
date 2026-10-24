@@ -90,6 +90,9 @@
 const TUNISIA = {
     name: "Tunisia",
     code: "TH",
+    capitals: [
+        { name: "Tunis", x: "563.8", y: "142.6" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

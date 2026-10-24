@@ -90,6 +90,9 @@
 const TAIWAN = {
     name: "Taiwan",
     code: "TW",
+    capitals: [
+        { name: "Taipei", x: "763.3", y: "342.8" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

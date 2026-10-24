@@ -90,6 +90,9 @@
 const TRINIDAD_AND_TOBAGO = {
     name: "Trinidad_and_tobago",
     code: "TT",
+    capitals: [
+        { name: "Port of Spain", x: "306.5", y: "490.8" }
+    ],
     viewBox: "0 0 1000 932",
     states: [
         {

@@ -90,6 +90,9 @@
 const VATICAN = {
     name: "Vatican",
     code: "VA",
+    capitals: [
+        { name: "Vatican City", x: "525", y: "508.4" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

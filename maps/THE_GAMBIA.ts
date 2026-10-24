@@ -90,6 +90,9 @@
 const THE_GAMBIA = {
     name: "The_gambia",
     code: "GM",
+    capitals: [
+        { name: "Banjul", x: "90.1", y: "140.7" }
+    ],
     viewBox: "0 0 1000 258",
     states: [
         {

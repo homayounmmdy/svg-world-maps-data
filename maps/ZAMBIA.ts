@@ -90,6 +90,9 @@
 const ZAMBIA = {
     name: "Zambia",
     code: "ZM",
+    capitals: [
+        { name: "Lusaka", x: "608.1", y: "602.1" }
+    ],
     viewBox: "0 0 1000 860",
     states: [
         {

@@ -90,6 +90,9 @@
 const UAE = {
     name: "Uae",
     code: "AE",
+    capitals: [
+        { name: "Abu Dhabi", x: "575.9", y: "574.8" }
+    ],
     viewBox: "0 0 1000 788",
     states: [
         {

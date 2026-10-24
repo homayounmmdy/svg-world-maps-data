@@ -90,6 +90,9 @@
 const URUGUAY = {
     name: "Uruguay",
     code: "UY",
+    capitals: [
+        { name: "Montevideo", x: "440", y: "925.7" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

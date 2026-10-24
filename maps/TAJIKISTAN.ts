@@ -90,6 +90,9 @@
 const TAJIKISTAN = {
     name: "Tajikistan",
     code: "TJ",
+    capitals: [
+        { name: "Dushanbe", x: "212.2", y: "410.6" }
+    ],
     viewBox: "0 0 1000 719",
     states: [
         {

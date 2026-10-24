@@ -90,6 +90,9 @@
 const UGANDA = {
     name: "Uganda",
     code: "UG",
+    capitals: [
+        { name: "Kampala", x: "548.2", y: "668.9" }
+    ],
     viewBox: "0 0 1000 1000",
     states: [
         {

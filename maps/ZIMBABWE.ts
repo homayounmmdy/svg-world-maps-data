@@ -90,6 +90,9 @@
 const ZIMBABWE = {
     name: "Zimbabwe",
     code: "ZW",
+    capitals: [
+        { name: "Harare", x: "724", y: "313.6" }
+    ],
     viewBox: "0 0 1000 918",
     states: [
         {

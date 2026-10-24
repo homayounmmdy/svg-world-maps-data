@@ -90,6 +90,9 @@
 const TIMORLESTE = {
     name: "Timor-leste",
     code: "TL",
+    capitals: [
+        { name: "Dili", x: "491.1", y: "137.8" }
+    ],
     viewBox: "0 0 1000 421",
     states: [
         {

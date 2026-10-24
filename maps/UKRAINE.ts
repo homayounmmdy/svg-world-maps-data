@@ -90,6 +90,9 @@
 const UKRAINE = {
     name: "Ukraine",
     code: "UA",
+    capitals: [
+        { name: "Kyiv", x: "454.3", y: "233" }
+    ],
     viewBox: "0 0 1000 669",
     states: [
         {

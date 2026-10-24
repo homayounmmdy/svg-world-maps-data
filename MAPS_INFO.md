@@ -208,13 +208,13 @@ This report provides an automated, real-time overview of all available map confi
 | `sweden` | SWEDEN | JPP | 21 | ✅ Yes | ❌ No |
 | `switzerland` | Switzerland | JPP | 26 | ✅ Yes | ❌ No |
 | `syria` | Syria | JPP | 14 | ✅ Yes | ❌ No |
-| `taiwan` | Taiwan | JPP | 22 | ✅ Yes | ❌ No |
+``| `taiwan` | Taiwan | JPP | 22 | ✅ Yes | ❌ No |
 | `tajikistan` | Tajikistan | JPP | 5 | ✅ Yes | ❌ No |
 | `tanzania` | Tanzania | JPP | 31 | ✅ Yes | ❌ No |
 | `thailand` | Thailand | JPP | 78 | ✅ Yes | ❌ No |
 | `the_gambia` | The_gambia | JPP | 6 | ✅ Yes | ❌ No |
 | `timor-leste` | Timor-leste | JPP | 13 | ✅ Yes | ❌ No |
-| `togo` | Togo | JPP | 5 | ✅ Yes | ❌ No |
+| `togo` | Togo | JPP | 5 | ✅ Yes | ❌ No |``
 | `tonga` | Tonga | JPP | 5 | ✅ Yes | ❌ No |
 | `trinidad_and_tobago` | Trinidad_and_tobago | JPP | 15 | ✅ Yes | ❌ No |
 | `tunisia` | Tunisia | JPP | 24 | ✅ Yes | ❌ No |

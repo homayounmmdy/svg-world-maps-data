@@ -90,6 +90,9 @@
 const SWITZERLAND = {
     name: "Switzerland",
     code: "CH",
+    capitals: [
+        { name: "Bern", x: "379.9", y: "328.5" }
+    ],
     viewBox: "0 0 1000 641",
     states: [
         {

@@ -90,6 +90,9 @@
 const SYRIA = {
     name: "Syria",
     code: "SY",
+    capitals: [
+        { name: "Damascus", x: "122.7", y: "681" }
+    ],
     viewBox: "0 0 1000 918",
     states: [
         {

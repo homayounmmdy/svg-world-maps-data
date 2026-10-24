@@ -90,6 +90,9 @@
 const TURKMENISTAN = {
     name: "Turkmenistan",
     code: "TM",
+    capitals: [
+        { name: "Ashgabat", x: "422.8", y: "437.2" }
+    ],
     viewBox: "0 0 1000 692",
     states: [
         {
