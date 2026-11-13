@@ -52,13 +52,33 @@ function coverageClass(pct) {
   return "bad";
 }
 
+function stripComments(src) {
+  let out = src.replace(/\/\*[\s\S]*?\*\//g, "");
+  out = out.replace(/(^|[^:"'`])\/\/[^\n]*/g, "$1");
+  return out;
+}
+
+function extractMapCode(content, fileName) {
+  const clean = stripComments(content);
+
+  const statesIdx = clean.search(/\bstates\s*:\s*\[/);
+  if (statesIdx !== -1) {
+    const before = clean.slice(0, statesIdx);
+    const matches = [...before.matchAll(/\bcode\s*:\s*["'`]([^"'`]+)["'`]/g)];
+    if (matches.length) return matches[matches.length - 1][1];
+  }
+
+  const m = clean.match(/\bcode\s*:\s*["'`]([^"'`]+)["'`]/);
+  return m ? m[1] : "N/A";
+}
+
 // ─── Map file parsing (same logic as before) ────────────────────────────────
 function extractMapInfo(content, fileName) {
   const command = fileName.replace(/\.ts$/i, "").toLowerCase();
   const nameMatch = content.match(/\bname\s*:\s*["']([^"']+)["']/);
   const mapName = nameMatch ? nameMatch[1] : command;
   const codeMatch = content.match(/\bcode\s*:\s*["']([^"']+)["']/);
-  const mapCode = codeMatch ? codeMatch[1] : "N/A";
+  const mapCode = extractMapCode(content, fileName);
 
   let stateCount = 0;
   const statesMatch = content.match(/\bstates\s*:\s*\[/);
